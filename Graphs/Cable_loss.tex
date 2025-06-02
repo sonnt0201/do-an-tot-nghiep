@@ -1,0 +1,76 @@
+\documentclass{standalone}
+\usepackage{siunitx}
+
+\usepackage[OT1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{helvet,sfmath}
+\usepackage[fontsize=13pt]{scrextend}
+\usepackage{siunitx}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,patterns}
+\usepackage{tikz,tkz-euclide}
+\usepackage{circuitikz}
+
+\usepackage{pgfplots}
+
+\pgfplotsset{width=30cm,compat=1.18}
+
+%% Color %%
+\definecolor{BlueDefault}{rgb}{0.2,0.2,0.7}
+\definecolor{Real}{RGB}{184, 115, 51}
+\definecolor{Measure}{RGB}{184, 115, 51}
+
+\begin{document}
+
+\sffamily
+
+\begin{tikzpicture}
+\begin{axis}[
+% title = { \textbf{The spectrum of electromagnetic wave in balcony 4th floor of C7 building} },
+xlabel = {\textbf{Frequency (GHz)}},
+ylabel = {\textbf{Power (dBm)}},
+grid style={dashed, gray!30},
+xmin=0, xmax=7,
+ymin=-92, ymax=-40,
+grid=both,
+y post scale=1,
+xticklabel style={/pgf/number format/fixed, /pgf/number format/fixed zerofill, /pgf/number format/precision=1}
+]
+
+\addplot table [
+color = blue,
+smooth,
+mark = none,
+x expr=\thisrow{Frequency(Hz)}/1e9,
+y=Power(dBm),
+col sep=comma,
+each nth point={2}
+]
+{Balcony_All_peaks.txt};
+
+\addplot table [
+color = red,
+smooth,
+mark = none,
+x expr=\thisrow{Frequency(Hz)}/1e9,
+y=Power_real(dBm),
+col sep=comma,
+each nth point={2}
+]
+{Balcony_All_peaks.txt};
+
+\end{axis}
+
+% % Add nodes at the peaks
+% \draw
+% (3.8,8.6) node{\textbf{GSM}}
+% (7.6,9.6) node{\textbf{GSM/LTE}}
+% (8.8,8.0) node{\textbf{UMTS}}
+% (9.8,11.9) node{\textbf{WIFI 2.4GHz}}
+% (23.5,8.0) node{\textbf{WIFI 5GHz}}
+% ;
+
+
+\end{tikzpicture}
+\end{document}

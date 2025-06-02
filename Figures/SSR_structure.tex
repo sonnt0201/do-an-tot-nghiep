@@ -1,0 +1,38 @@
+\documentclass{standalone}
+
+\usepackage[OT1]{fontenc}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage{helvet,sfmath}
+\usepackage{siunitx}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,patterns}
+\usepackage{tikz,tkz-euclide}
+\usepackage{circuitikz}
+
+%% Color %%
+\definecolor{BlueDefault}{rgb}{0.2,0.2,0.7}
+\definecolor{Fr4}{RGB}{228, 188, 65}
+\definecolor{Copper}{RGB}{184, 115, 51}
+
+\begin{document}
+
+\begin{circuitikz}[scale=0.6]
+    \foreach \x in {-20,-10,0,10,20}
+    {
+    \foreach \y in {-20,-10,0,10,20}
+    {
+    \draw[fill=lightgray, thick] (\x,\y) circle (4);
+    \draw[fill=white, thick] (\x,\y) circle (3);
+    \draw[draw=none, fill=white] (\x+-0.5,\y+0) to (\x+0.5,\y+0) to (\x+0.5,\y+4.2) to (\x+-0.5,\y+4.2) to (\x+-0.5,\y+0);
+    \draw[thick]
+    (\x+0.5,\y+3.99) to (\x+0.5,\y+2.93)
+    (\x+-0.5,\y+3.99) to (\x+-0.5,\y+2.93)
+    ;
+    \draw[dashed] (\x+-5,\y+-5) to (\x+5,\y+-5) to (\x+5,\y+5) to (\x+-5,\y+5) to (\x+-5,\y+-5);
+    }
+    }
+\end{circuitikz}
+
+\end{document}
+

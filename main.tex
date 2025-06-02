@@ -1,0 +1,133 @@
+
+%--------------------------------------------------------------
+% ĐẠI HỌC BÁCH KHOA HÀ NỘI
+% Trường Điện - Điện tử
+% Khoa Tự động hoá
+%
+% MẪU SOẠN THẢO ĐỒ ÁN
+
+% Phiên bản bổ sung ghi chú sửa đổi, kế hoạch thực hiện và biên bản cuộc họp theo mẫu của thầy Nguyễn Quốc Cường - Smart Sensor Lab
+%--------------------------------------------------------------
+
+\documentclass{thesis}
+\usepackage[utf8]{inputenc} % 
+\usepackage[T5]{fontenc} % Font Vietnamese
+\usepackage{graphicx} % Figure
+\usepackage{float} % Set position figure or table
+\usepackage{mathptmx} % select font Times New Roman
+\usepackage{geometry} % Set parameters paper
+\usepackage{xcolor}
+\usepackage[fontsize=13pt]{scrextend} % set font size = 13pt
+% \usepackage{indentfirst} % Indent first line
+\usepackage[protrusion=false]{microtype}
+\usepackage{titling}
+\usepackage{multicol}
+
+\usepackage{amsmath} % for math equation
+
+\usepackage{siunitx} % for unit
+\usepackage{longtable} % for long table
+% \usepackage{subfigure}
+\usepackage{subcaption}
+
+\linespread{1.2}
+
+\nocite{*}
+
+
+%% START DOCUMENT
+\begin{document}
+
+% CREATE COVER PAGE
+\input{General/Cover_page}
+    \newpage
+   %     \clearpage
+%            \thispagestyle{empty}
+  %              \cleardoublepage
+
+% THESIS TASK                
+\input{General/Thesis_task}
+    \newpage
+%        \clearpage
+ %           \thispagestyle{empty}
+ %               \cleardoublepage    
+                
+% THANKS
+\input{General/Acknowledgement}
+
+\newpage % create a new page
+%    \thispagestyle{empty} 
+%        \clearpage
+%            \thispagestyle{empty}
+  %              \cleardoublepage
+
+% SUMMARY PART
+\input{General/Abstract}
+
+\newpage
+
+% TABLE OF CONTENT
+\input{General/Table_of_contents}
+\newpage
+
+%%%%%%%%%%%% Using for lab report version %%%%%%%%%%%%
+\input{General/Edit_note}
+\thispagestyle{empty}
+\newpage
+
+\input{General/Implementation_plan}
+\thispagestyle{empty}
+\newpage
+
+\input{General/Meeting_notes}
+\thispagestyle{empty}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% --------------------------------------------------%%
+%------------CHAPTER 1---------------------------%
+%%-----------------------------------------------------%
+
+\input{Contents/1_Introduction}
+
+\newpage
+%---------------------------------------------------------%%
+%% ----------CHAPTER 2 -------------------%%
+%---------------------------------------------------------%%
+
+\input{Contents/2_Theoritical_Basis}
+
+\newpage
+
+%% --------------------------------------------------%%
+%------------CHAPTER 3---------------------------%
+%%-----------------------------------------------------%
+
+\input{Contents/3_Methodology}
+
+\newpage
+%% --------------------------------------------------%%
+%------------ CHAPTER 4 ---------------------------%
+%%-----------------------------------------------------%
+
+\include{Contents/4_Simulation_results}
+
+\newpage
+
+
+% CONCLUSIONS
+\input{Contents/Conclusion}
+
+\newpage
+
+% REFERENCES
+\phantomsection\addcontentsline{toc}{section}{\numberline {}TÀI LIỆU THAM KHẢO}
+
+\bibliography{citation}
+\newpage
+
+% APPENDIX
+\input{Contents/Appendix}
+
+\end{document}

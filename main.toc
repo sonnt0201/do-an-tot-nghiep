@@ -1,0 +1,16 @@
+\babel@toc {nil}{}\relax 
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion DANH MỤC KÝ HIỆU VÀ CHỮ VIẾT TẮT}{i}{section*.3}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion DANH MỤC HÌNH VẼ}{ii}{section*.4}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion DANH MỤC BẢNG BIỂU}{iii}{section*.5}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 1. GIỚI THIỆU CHUNG}{1}{table.3}%
+\contentsline {subsection}{\numberline {1.1}Vai trò của thiết bị đọc ghi màn hình cột bơm xăng dầu}{1}{subsection.6}%
+\contentsline {subsection}{\numberline {1.2}Khái quát về yêu cầu và chức năng của hệ thống}{1}{subsection.7}%
+\contentsline {subsection}{\numberline {1.3}Phạm vi nghiên cứu}{2}{subsection.8}%
+\contentsline {subsection}{\numberline {1.4}Giải pháp đề xuất}{3}{subsection.9}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 2. CƠ SỞ LÝ THUYẾT}{4}{subsection.9}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 3. PHƯƠNG PHÁP LUẬN}{5}{subsection.9}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 4. MÔ PHỎNG VÀ KẾT QUẢ}{6}{subsection.9}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion KẾT LUẬN}{7}{section*.10}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion TÀI LIỆU THAM KHẢO}{8}{section*.11}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion PHỤ LỤC}{9}{section*.12}%
+\contentsline {section}{\numberline {A}Một số phương pháp đo và hiệu chuẩn}{9}{appendix.13}%

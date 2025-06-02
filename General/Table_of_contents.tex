@@ -1,0 +1,31 @@
+\tableofcontents 
+    \thispagestyle{empty}
+        \newpage
+ %           \thispagestyle{empty}
+  %              \cleardoublepage
+
+% LIST OF SYMBOLS AND ABBREVIATIONS
+\pagenumbering{roman}   % Roman numbering: i, ii, iii, iv,...
+\section*{DANH MỤC KÝ HIỆU VÀ CHỮ VIẾT TẮT}
+    \phantomsection \addcontentsline{toc}{section}{\numberline{} DANH MỤC KÝ HIỆU VÀ CHỮ VIẾT TẮT}
+
+% Create table
+\begin{tabular}{ l l }
+    \hspace{1cm} HESS & \hspace{4cm} Hybrid Energy Storage System \\  
+    \hspace{1cm} SC & \hspace{4cm} Super Capacitor    \\
+    \hspace{1cm} EMS  & \hspace{4cm} Energy Management Strategy 
+\end{tabular}  
+    \newpage
+
+% LIST OF FIGURES
+{\let\oldnumberline\numberline
+    \renewcommand{\numberline}{Hình~\oldnumberline}
+        \listoffigures}
+            \phantomsection\addcontentsline{toc}{section}{\numberline{} DANH MỤC HÌNH VẼ}
+\newpage
+
+% LIST OF TABLES
+{\let\oldnumberline\numberline
+    \renewcommand{\numberline}{Bảng~\oldnumberline}
+        \listoftables}
+            \phantomsection\addcontentsline{toc}{section}{\numberline{} DANH MỤC BẢNG BIỂU}
