@@ -5,12 +5,22 @@
 \contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 1. GIỚI THIỆU CHUNG}{1}{table.3}%
 \contentsline {subsection}{\numberline {1.1}Vai trò của thiết bị đọc ghi màn hình cột bơm xăng dầu}{1}{subsection.6}%
 \contentsline {subsection}{\numberline {1.2}Khái quát về yêu cầu và chức năng của hệ thống}{1}{subsection.7}%
-\contentsline {subsection}{\numberline {1.3}Phạm vi nghiên cứu}{2}{subsection.8}%
-\contentsline {subsection}{\numberline {1.4}Giải pháp đề xuất}{3}{subsection.9}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 2. CƠ SỞ LÝ THUYẾT}{4}{subsection.9}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 3. PHƯƠNG PHÁP LUẬN}{5}{subsection.9}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 4. MÔ PHỎNG VÀ KẾT QUẢ}{6}{subsection.9}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion KẾT LUẬN}{7}{section*.10}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion TÀI LIỆU THAM KHẢO}{8}{section*.11}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion PHỤ LỤC}{9}{section*.12}%
-\contentsline {section}{\numberline {A}Một số phương pháp đo và hiệu chuẩn}{9}{appendix.13}%
+\contentsline {subsection}{\numberline {1.3}Phạm vi nghiên cứu}{2}{subsection.9}%
+\contentsline {subsection}{\numberline {1.4}Phương pháp nghiên cứu}{3}{subsection.10}%
+\contentsline {subsection}{\numberline {1.5}Cấu trúc đồ án}{4}{subsection.12}%
+\contentsline {subsection}{\numberline {1.6}Kết luận chương}{4}{subsection.13}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 2. CƠ SỞ LÝ THUYẾT}{5}{subsection.13}%
+\contentsline {subsection}{\numberline {2.1}}{5}{subsection.14}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 3. PHƯƠNG PHÁP LUẬN}{6}{subsection.14}%
+\contentsline {subsection}{\numberline {3.1}Phân tích yêu cầu hệ thống}{6}{subsection.15}%
+\contentsline {subsubsection}{\numberline {3.1.1}Thiết bị đọc ghi màn hình}{6}{subsubsection.17}%
+\contentsline {subsubsection}{\numberline {3.1.2}Phần mềm giải mã}{6}{subsubsection.18}%
+\contentsline {subsubsection}{\numberline {3.1.3}Hệ thống mạng}{7}{subsubsection.19}%
+\contentsline {subsection}{\numberline {3.2}Mô hình thiết kế tổng thể}{7}{subsection.20}%
+\contentsline {subsubsection}{\numberline {3.2.1}Sơ đồ khối chức năng thiết bị đọc ghi màn hình (Device)}{7}{subsubsection.21}%
+\contentsline {subsubsection}{\numberline {3.2.2}Sơ đồ khối chức năng phần mềm giải mã (Device Service)}{8}{subsubsection.23}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 4. MÔ PHỎNG VÀ KẾT QUẢ}{9}{figure.caption.24}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion KẾT LUẬN}{10}{section*.25}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion TÀI LIỆU THAM KHẢO}{11}{section*.26}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion PHỤ LỤC}{12}{section*.27}%
+\contentsline {section}{\numberline {A}Một số phương pháp đo và hiệu chuẩn}{12}{appendix.28}%

@@ -14,12 +14,21 @@
 
 Những cột bơm mới được bán gần đây cũng đã được sản xuất tích hợp chức năng xuất hóa đơn điện tử. Nhưng còn một lượng rất lớn những cây xăng với công nghệ cũ vẫn còn đạt tiêu chuẩn và sử dụng tốt được ở nhiều trạm bơm trên khắp cả nước, việc bỏ hẳn những cây xăng này đi thay bằng những cây xăng công nghệ mới sẽ tốn nhiều thời gian và chi phí đầu tư, gây lãng phí cũng như thải nhiều rác thải điện tử hơn cho môi trường. Từ đó xuất hiện nhu cầu cải tiến những cây xăng cũ để xuất được hóa đơn điện tử, chi phí và thời gian doanh nghiệp bỏ ra sẽ được tối ưu hơn.
 
-Từ yêu cầu trực tiếp của doanh nghiệp, báo cáo này được viết để đưa ra phương án thiết kế và triển khai hệ thống có thể đọc ghi và phân tích dữ liệu màn hình cây xăng, từ đó phát hiện được các lần giao dịch và lưu trữ, quản lý các lượt giao dịch - lượt bơm xăng đó.
+Từ yêu cầu trực tiếp của doanh nghiệp, báo cáo này được viết để đưa ra phương án thiết kế và triển khai hệ thống có thể đọc ghi và giải mã, phân tích dữ liệu màn hình cây xăng, từ đó phát hiện được các lần giao dịch và lưu trữ, quản lý các lượt giao dịch - lượt bơm xăng đó.
 
 
 \subsection{Khái quát về yêu cầu và chức năng của hệ thống}
 
- \hspace{1cm} 
+
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1.0\linewidth]{Figures/Chap1_proj-purpose.png}
+    \caption{Minh họa mục tiêu đầu ra của hệ thống}
+    \label{fig:hinh1.1}
+\end{figure}
+
+Mục tiêu là thiết kế thiết bị đọc ghi và giải mã màn hình cây xăng đáp ứng những nhu cầu sau:
 
  \textbf{1. \quad Giám sát số liệu hiển thị trên cột bơm theo thời gian thực}
 
@@ -99,6 +108,48 @@ Thiết bị đọc màn hình cây xăng có 2 relay đóng ngắt có thể n�
 
  Từ giao diện quản lí, có thể tải (upload) file phần mềm dạng mã nhị phân, gửi cho thiết bị đọc màn hình để thiết bị tự cập nhật. 
 
-\subsection{Giải pháp đề xuất}
+\subsection{Phương pháp nghiên cứu}
 
+\hspace{1cm} Bối cảnh màn hình cây xăng là các màn hình cũ, không có tài liệu cụ thể về thiết phần cứng và giao thức.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Figures/Chap1_Zcheng-screen-hardware.png}
+    \caption{Mạch phần cứng màn hình cây xăng hãng ZCheng}
+    \label{fig:hinh1.1}
+\end{figure}
+
+Do đó, cần khảo sát tín hiệu màn hình. Sử dụng mạch thu và phần mềm của Logic Analyzer để thu tín hiệu theo các bước sau:
+
+- Sử dụng đồng hồ đo áp, xác định các chân nguồn, đất, tín hiệu và các chân có điện áp cao (để tránh cắm chân Logic Analyzer vào các chân có điện áp cao này).
+
+- Sử dụng mạch cứng và phần mềm Logic Analyzer nối vào các chân tín hiệu tới màn hình để thu các tín hiệu. Đồng thời, sử dụng máy quay quay lại màn hình hiển thị trong quá trình thu.
+
+- Thực hiện các thao tác phổ biến: reset màn hình, bơm xăng, preset màn hình (đặt trước giá trị tiền hoặc lít cần bơm) rồi ghi lại tín hiệu và video màn hình trong quá trình vận hành thao tác.
+
+- Khảo sát tín hiệu, so sánh tín hiệu với giá trị hiển thị trên màn hình để xác định:
+
+\begin{itemize}
+   \item Vị trí các chân (nguồn, đất, cấp xung, dữ liệu, ...)
+   \item Giao thức sử dụng (SPI), dấu hiệu bắt đầu và kết thúc một gói tin
+   \item Ý nghĩa các byte trong gói tin
+\end{itemize}
+
+Từ đó, chế tạo mạch thu gói tin theo giao thức SPI và thiết kế phần mềm giải mã.
+
+\subsection{Cấu trúc đồ án}
+
+Nội dung được trình bày ở các chương tiếp theo bao gồm: 
+\begin{itemize}
+   \item Tổng quan lý thuyết và công nghệ: Trình bày các nền tảng lý thuyết và mô tả các công nghệ được sử dụng trong thiết kế.
+   \item Thiết kế hệ thống sản phẩm: Bao gồm sơ đồ các khối chức năng của thiết bị đọc ghi màn hình và phần mềm giải mã, cùng với thiết kế chi tiết (mạch cứng và phần mềm) từng khối, trình tự giao tiếp giữa các khối.
+   \item Triển khai và thử nghiệm: Thử nghiệm thiết bị trên màn hình cột bơm tại hiện trường, đánh giá kết quả.
+   \item Kết luận và hướng phát triển.
+\end{itemize}
+
+\subsection{Kết luận chương}
+
+\hspace{1cm} Trong chương này, em đã đưa ra bối cảnh thực tế của bài toán, giải thích nhu cầu thực tế của thiết bị đọc ghi màn hình cây xăng, cùng với lợi ích mà nó mang lại trong quá trình phát triển và chuyển đổi số.
+
+Đồng thời, chương này liệt kê các yêu cầu kĩ thuật cụ thể, cách tiếp cận bài toán từ đó đưa ra hướng thiết kế và triển khai tiếp theo.
 
