@@ -19,8 +19,11 @@
 \contentsline {subsection}{\numberline {3.2}Mô hình thiết kế tổng thể}{7}{subsection.20}%
 \contentsline {subsubsection}{\numberline {3.2.1}Sơ đồ khối chức năng thiết bị đọc ghi màn hình (Device)}{7}{subsubsection.21}%
 \contentsline {subsubsection}{\numberline {3.2.2}Sơ đồ khối chức năng phần mềm giải mã (Device Service)}{8}{subsubsection.23}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 4. MÔ PHỎNG VÀ KẾT QUẢ}{9}{figure.caption.24}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion KẾT LUẬN}{10}{section*.25}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion TÀI LIỆU THAM KHẢO}{11}{section*.26}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion PHỤ LỤC}{12}{section*.27}%
-\contentsline {section}{\numberline {A}Một số phương pháp đo và hiệu chuẩn}{12}{appendix.28}%
+\contentsline {subsection}{\numberline {3.3}Thiết kế phần cứng thiết bị đọc màn hình}{9}{subsection.25}%
+\contentsline {subsubsection}{\numberline {3.3.1}Sơ đồ khối phần cứng thiết bị đọc màn hình}{9}{subsubsection.26}%
+\contentsline {subsubsection}{\numberline {3.3.2}Lựa chọn linh kiện}{9}{subsubsection.28}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 4. MÔ PHỎNG VÀ KẾT QUẢ}{13}{figure.caption.30}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion KẾT LUẬN}{14}{section*.31}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion TÀI LIỆU THAM KHẢO}{15}{section*.32}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion PHỤ LỤC}{16}{section*.33}%
+\contentsline {section}{\numberline {A}Một số phương pháp đo và hiệu chuẩn}{16}{appendix.34}%

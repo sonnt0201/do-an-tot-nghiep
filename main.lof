@@ -4,3 +4,6 @@
 \contentsline {figure}{\numberline {3.1.}{\ignorespaces Các thành phần của hệ thống}}{6}{figure.caption.16}%
 \contentsline {figure}{\numberline {3.2.}{\ignorespaces Sơ đồ khối chức năng thiết bị đọc ghi màn hình (Device)}}{7}{figure.caption.22}%
 \contentsline {figure}{\numberline {3.3.}{\ignorespaces Sơ đồ khối chức năng phần mềm giải mã và chốt phiên bơm (Device Service)}}{8}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4.}{\ignorespaces Sơ đồ khối triển khai phần cứng thiết bị đọc ghi màn hình}}{9}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.5.}{\ignorespaces Sơ đồ nguyên lý khối xử lý trung tâm}}{11}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.6.}{\ignorespaces Sơ đồ nguyên lý khối đầu vào tín hiệu}}{12}{figure.caption.30}%

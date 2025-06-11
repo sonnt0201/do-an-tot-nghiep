@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.3)  8 JUN 2025 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.3)  11 JUN 2025 10:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -853,7 +853,7 @@ Package hyperref Info: Link coloring ON on input line 42.
 \openout3 = `main.out'.
 
  (./General/Cover_page.tex
-<logoBK.png, id=102, 69.25874pt x 112.16907pt>
+<logoBK.png, id=114, 69.25874pt x 112.16907pt>
 File: logoBK.png Graphic file (type png)
 <use logoBK.png>
 Package pdftex.def Info: logoBK.png  used on input line 11.
@@ -923,13 +923,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--47
 
 [3] (./General/Abstract.tex)
 
-[4] (./General/Table_of_contents.tex (./main.toc)
+[4] (./General/Table_of_contents.tex (./main.toc
+
+[5])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 
 
-[5]
+[6]
 
 [1] (./main.lof)
 \tf@lof=\write5
@@ -980,7 +982,7 @@ Overfull \hbox (7.32079pt too wide) in alignment at lines 8--17
 )
 
 [6] (./Contents/1_Introduction.tex
-<Figures/Chap1_proj-purpose.png, id=199, 977.616pt x 356.97pt>
+<Figures/Chap1_proj-purpose.png, id=224, 977.616pt x 356.97pt>
 File: Figures/Chap1_proj-purpose.png Graphic file (type png)
 <use Figures/Chap1_proj-purpose.png>
 Package pdftex.def Info: Figures/Chap1_proj-purpose.png  used on input line 26.
@@ -990,7 +992,7 @@ Package pdftex.def Info: Figures/Chap1_proj-purpose.png  used on input line 26.
 [1 <./Figures/Chap1_proj-purpose.png>]
 
 [2]
-<Figures/Chap1_Zcheng-screen-hardware.png, id=210, 238.64156pt x 332.74312pt>
+<Figures/Chap1_Zcheng-screen-hardware.png, id=235, 238.64156pt x 332.74312pt>
 File: Figures/Chap1_Zcheng-screen-hardware.png Graphic file (type png)
 <use Figures/Chap1_Zcheng-screen-hardware.png>
 Package pdftex.def Info: Figures/Chap1_Zcheng-screen-hardware.png  used on input line 117.
@@ -1002,7 +1004,7 @@ Package pdftex.def Info: Figures/Chap1_Zcheng-screen-hardware.png  used on input
 [4 <./Figures/Chap1_Zcheng-screen-hardware.png>] (./Contents/2_Theoritical_Basis.tex)
 
 [5] (./Contents/3_System_Design.tex
-<Figures/Chap3_FunctionBlock-implementation.png, id=224, 914.982pt x 484.866pt>
+<Figures/Chap3_FunctionBlock-implementation.png, id=249, 914.982pt x 484.866pt>
 File: Figures/Chap3_FunctionBlock-implementation.png Graphic file (type png)
 <use Figures/Chap3_FunctionBlock-implementation.png>
 Package pdftex.def Info: Figures/Chap3_FunctionBlock-implementation.png  used on input line 17.
@@ -1010,7 +1012,7 @@ Package pdftex.def Info: Figures/Chap3_FunctionBlock-implementation.png  used on
 
 
 [6 <./Figures/Chap3_FunctionBlock-implementation.png>]
-<Figures/Chap3_Device-FunctionBlock.png, id=231, 1407.2575pt x 422.57875pt>
+<Figures/Chap3_Device-FunctionBlock.png, id=256, 1407.2575pt x 422.57875pt>
 File: Figures/Chap3_Device-FunctionBlock.png Graphic file (type png)
 <use Figures/Chap3_Device-FunctionBlock.png>
 Package pdftex.def Info: Figures/Chap3_Device-FunctionBlock.png  used on input line 70.
@@ -1018,23 +1020,49 @@ Package pdftex.def Info: Figures/Chap3_Device-FunctionBlock.png  used on input l
 
 
 [7 <./Figures/Chap3_Device-FunctionBlock.png>]
-<Figures/Chap3_DeviceService-function-block.png, id=237, 1077.02374pt x 433.62pt>
+<Figures/Chap3_DeviceService-function-block.png, id=263, 1076.02pt x 433.62pt>
 File: Figures/Chap3_DeviceService-function-block.png Graphic file (type png)
 <use Figures/Chap3_DeviceService-function-block.png>
 Package pdftex.def Info: Figures/Chap3_DeviceService-function-block.png  used on input line 93.
-(pdftex.def)             Requested size: 441.01775pt x 177.56038pt.
-)
+(pdftex.def)             Requested size: 441.01775pt x 177.7258pt.
+
 
 [8 <./Figures/Chap3_DeviceService-function-block.png>]
+<Figures/Chap3_Device-Hardware-implementation-function-block.png, id=269, 897.3525pt x 463.7325pt>
+File: Figures/Chap3_Device-Hardware-implementation-function-block.png Graphic file (type png)
+<use Figures/Chap3_Device-Hardware-implementation-function-block.png>
+Package pdftex.def Info: Figures/Chap3_Device-Hardware-implementation-function-block.png  used on input line 122.
+(pdftex.def)             Requested size: 441.01775pt x 227.90312pt.
+
+
+[9 <./Figures/Chap3_Device-Hardware-implementation-function-block.png>]
+<Figures/Chap3_STM32-principle.pdf, id=275, 794.97pt x 614.295pt>
+File: Figures/Chap3_STM32-principle.pdf Graphic file (type pdf)
+<use Figures/Chap3_STM32-principle.pdf>
+Package pdftex.def Info: Figures/Chap3_STM32-principle.pdf  used on input line 170.
+(pdftex.def)             Requested size: 441.01775pt x 340.79715pt.
+
+
+[10]
+
+[11 <./Figures/Chap3_STM32-principle.pdf>]
+<Figures/Chap3_Input-signal-block-principle.pdf, id=303, 794.97pt x 614.295pt>
+File: Figures/Chap3_Input-signal-block-principle.pdf Graphic file (type pdf)
+<use Figures/Chap3_Input-signal-block-principle.pdf>
+Package pdftex.def Info: Figures/Chap3_Input-signal-block-principle.pdf  used on input line 220.
+(pdftex.def)             Requested size: 441.01775pt x 340.79715pt.
+)
+
+[12 <./Figures/Chap3_Input-signal-block-principle.pdf>]
 \openout2 = `Contents/4_Simulation_results.aux'.
 
  (./Contents/4_Simulation_results.tex)
 
-[9
+[13
 
 ] (./Contents/Conclusion.tex)
 
-[10
+[14
 
 
 ] (./main.bbl
@@ -1043,9 +1071,9 @@ LaTeX Warning: Empty `thebibliography' environment on input line 23.
 
 )
 
-[11] (./Contents/Appendix.tex)
+[15] (./Contents/Appendix.tex)
 
-[12] (./main.aux (./Contents/4_Simulation_results.aux))
+[16] (./main.aux (./Contents/4_Simulation_results.aux))
  ***********
 LaTeX2e <2025-06-01>
 L3 programming layer <2020/03/25>
@@ -1055,21 +1083,21 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B2B397D82A54D872DC0BD0FF05CAAC7E;5268.
+(rerunfilecheck)             Checksum: E02A36EFA54BA625CF3FD74A4D6EB69D;6092.
  ) 
 Here is how much of TeX's memory you used:
- 22005 strings out of 467892
- 416448 string characters out of 5430995
- 915370 words of memory out of 5000000
- 50054 multiletter control sequences out of 15000+600000
- 671387 words of font info for 133 fonts, out of 8000000 for 9000
+ 22053 strings out of 467892
+ 417930 string characters out of 5430995
+ 915390 words of memory out of 5000000
+ 50081 multiletter control sequences out of 15000+600000
+ 672625 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 96i,9n,94p,1142b,1193s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/Program Files/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagb.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on main.pdf (23 pages, 2278305 bytes).
+ 96i,9n,94p,1142b,1201s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/Program Files/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagb.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb>
+Output written on main.pdf (28 pages, 2784324 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 254 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
- 32999 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 33038 words of extra memory for PDF output out of 35830 (max. 10000000)
 

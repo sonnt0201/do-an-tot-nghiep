@@ -380,6 +380,24 @@ INPUT ./Figures/Chap3_DeviceService-function-block.png
 INPUT ./Figures/Chap3_DeviceService-function-block.png
 INPUT ./Figures/Chap3_DeviceService-function-block.png
 INPUT ./Figures/Chap3_DeviceService-function-block.png
+INPUT ./Figures/Chap3_Device-Hardware-implementation-function-block.png
+INPUT ./Figures/Chap3_Device-Hardware-implementation-function-block.png
+INPUT ./Figures/Chap3_Device-Hardware-implementation-function-block.png
+INPUT ./Figures/Chap3_Device-Hardware-implementation-function-block.png
+INPUT ./Figures/Chap3_Device-Hardware-implementation-function-block.png
+INPUT ./Figures/Chap3_STM32-principle.pdf
+INPUT ./Figures/Chap3_STM32-principle.pdf
+INPUT ./Figures/Chap3_STM32-principle.pdf
+INPUT ./Figures/Chap3_STM32-principle.pdf
+INPUT ./Figures/Chap3_STM32-principle.pdf
+INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf
+INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
+INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT ./Figures/Chap3_Input-signal-block-principle.pdf
+INPUT ./Figures/Chap3_Input-signal-block-principle.pdf
+INPUT ./Figures/Chap3_Input-signal-block-principle.pdf
+INPUT ./Figures/Chap3_Input-signal-block-principle.pdf
+INPUT ./Figures/Chap3_Input-signal-block-principle.pdf
 INPUT ./Contents/4_Simulation_results.tex
 INPUT ./Contents/4_Simulation_results.tex
 OUTPUT Contents/4_Simulation_results.aux
@@ -406,6 +424,7 @@ INPUT Contents/4_Simulation_results.aux
 INPUT ./main.out
 INPUT ./main.out
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagb.pfb
+INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
