@@ -1,0 +1,57 @@
+sequenceDiagram
+    box Device
+         participant dev-dri as Device Driver
+     participant net as Internet Driver
+    end 
+
+    participant dev-service as Device Service
+  
+
+    activate dev-service
+    dev-service->>+net: Request start OTA with 2 firmwares' sizes
+    net->> +dev-dri: Request start OTA (forwarded)
+
+    activate dev-dri
+    dev-dri->>dev-dri: get firmware sizes of file 1 & 2
+    deactivate dev-dri
+
+    dev-dri-->>-net: Selected firmware file
+    net-->>-dev-service: Selected firmware file (forwarded)
+    deactivate dev-service
+
+     activate dev-service
+    dev-service ->> net: send firmware file
+
+    activate net
+    net->>dev-dri: forward firmware file
+
+    activate dev-dri
+
+     activate dev-dri
+    dev-dri ->> dev-dri: get file content
+     deactivate dev-dri
+
+     activate dev-dri
+    dev-dri->>dev-dri: write firmware to flash
+     deactivate dev-dri
+   
+    dev-service ->> net: request activate firmware
+    net->> dev-dri: activate firmware (forwarded)
+
+     activate dev-dri
+     dev-dri->>dev-dri: set new firmware address
+     deactivate dev-dri
+
+    
+
+   dev-dri->>net: response active firmware
+   net->>dev-service: response active firmware (forwareded)
+    deactivate net
+    deactivate dev-service
+
+     activate dev-dri
+    dev-dri->>dev-dri: [if write firm successfully] reset system
+     deactivate dev-dri
+
+     deactivate dev-dri
+

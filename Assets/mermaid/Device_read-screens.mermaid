@@ -1,0 +1,63 @@
+
+sequenceDiagram
+    participant gas as Gas Station
+
+    box Device 
+    participant conversion as Conversion
+    participant cap-dri as Capture Driver
+    participant dev-dri as Device Driver
+    participant net as Internet Driver
+    end 
+
+    participant dev-service as Device Service
+
+   
+    loop until n frames
+    
+        gas->>+conversion: signals
+        conversion->>-conversion: serialize to bytes
+        conversion->>+cap-dri: spi: frame with crc
+
+        alt rxLength != SCREEN_FRAME_SIZE
+            activate cap-dri
+            cap-dri->>cap-dri: set flag: ERR_LENGTH
+            deactivate cap-dri
+        end
+
+        activate cap-dri
+        cap-dri->>cap-dri: add timestamp to frame
+        deactivate cap-dri
+
+        activate cap-dri
+        cap-dri->>cap-dri: push frame to FIFO database
+        deactivate cap-dri
+
+        activate cap-dri
+        cap-dri->>cap-dri: reset rxLength and flag
+        deactivate cap-dri
+    end
+
+    activate net
+    net ->> net: check current connection
+    deactivate net
+
+    alt connection is established
+        cap-dri->>+cap-dri: pop n frames
+        cap-dri->>-dev-dri: n frames
+        dev-dri->>+dev-dri: create tcp message
+        dev-dri->>-net : tcp message
+        activate net
+        net->>+dev-service: send tcp message (forwarded)
+        deactivate net
+    else connection is not active
+        
+        loop until connection is active
+            net->>dev-service: try to connect
+            
+        end
+
+       
+    end
+
+ 
+

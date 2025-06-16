@@ -7,3 +7,8 @@
 \contentsline {figure}{\numberline {3.4.}{\ignorespaces Sơ đồ khối triển khai phần cứng thiết bị đọc ghi màn hình}}{9}{figure.caption.27}%
 \contentsline {figure}{\numberline {3.5.}{\ignorespaces Sơ đồ nguyên lý khối xử lý trung tâm}}{11}{figure.caption.29}%
 \contentsline {figure}{\numberline {3.6.}{\ignorespaces Sơ đồ nguyên lý khối đầu vào tín hiệu}}{12}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.7.}{\ignorespaces Sơ đồ nguyên lý khối nguồn và giao tiếp Ethernet}}{13}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.8.}{\ignorespaces Sơ đồ khối triển khai phần mềm Device}}{14}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.9.}{\ignorespaces Trình tự giao tiếp: Thiết lập kết nối tới phần mềm giải mã Device Service}}{15}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.10.}{\ignorespaces Trình tự giao tiếp: thu thập và đẩy dữ liệu màn hình}}{16}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.11.}{\ignorespaces Trình tự giao tiếp: cập nhật firmware từ xa (OTA)}}{17}{figure.caption.38}%

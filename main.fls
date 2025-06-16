@@ -146,6 +146,44 @@ INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/svg/svg.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/svg/svg.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/tools/shellesc.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/tools/shellesc.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/transparent/transparent.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/transparent/transparent.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
 INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -398,6 +436,31 @@ INPUT ./Figures/Chap3_Input-signal-block-principle.pdf
 INPUT ./Figures/Chap3_Input-signal-block-principle.pdf
 INPUT ./Figures/Chap3_Input-signal-block-principle.pdf
 INPUT ./Figures/Chap3_Input-signal-block-principle.pdf
+INPUT ./Figures/Chap3_Power-and-Ethernet-block-principle.pdf
+INPUT ./Figures/Chap3_Power-and-Ethernet-block-principle.pdf
+INPUT ./Figures/Chap3_Power-and-Ethernet-block-principle.pdf
+INPUT ./Figures/Chap3_Power-and-Ethernet-block-principle.pdf
+INPUT ./Figures/Chap3_Power-and-Ethernet-block-principle.pdf
+INPUT ./Figures/Chap3_Device-block-firmware-architecture.png
+INPUT ./Figures/Chap3_Device-block-firmware-architecture.png
+INPUT ./Figures/Chap3_Device-block-firmware-architecture.png
+INPUT ./Figures/Chap3_Device-block-firmware-architecture.png
+INPUT ./Figures/Chap3_Device-block-firmware-architecture.png
+INPUT ./Figures/Chap3_Device-firm-implementation-handshake.png
+INPUT ./Figures/Chap3_Device-firm-implementation-handshake.png
+INPUT ./Figures/Chap3_Device-firm-implementation-handshake.png
+INPUT ./Figures/Chap3_Device-firm-implementation-handshake.png
+INPUT ./Figures/Chap3_Device-firm-implementation-handshake.png
+INPUT ./Figures/Chap3_Device_firmware-implemetation-stream-screen.png
+INPUT ./Figures/Chap3_Device_firmware-implemetation-stream-screen.png
+INPUT ./Figures/Chap3_Device_firmware-implemetation-stream-screen.png
+INPUT ./Figures/Chap3_Device_firmware-implemetation-stream-screen.png
+INPUT ./Figures/Chap3_Device_firmware-implemetation-stream-screen.png
+INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
+INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
+INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
+INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
+INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
 INPUT ./Contents/4_Simulation_results.tex
 INPUT ./Contents/4_Simulation_results.tex
 OUTPUT Contents/4_Simulation_results.aux

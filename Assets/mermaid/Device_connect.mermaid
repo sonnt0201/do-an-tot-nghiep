@@ -1,0 +1,28 @@
+sequenceDiagram
+    box Device 
+    participant net as Internet Driver
+    end 
+
+    participant ds as Device Service
+
+    loop 
+    ds->>+net: Broadcast UDP packet
+   
+    net ->> net: Retrieve Device Service address
+    
+  
+        net ->> -ds: Request handshake
+
+        break Handshake successful
+
+            ds ->> +net: Handshake response
+
+            net ->> net: Save connection info
+
+            ds -> net: Keep connection
+            deactivate net
+        end
+
+        
+    end
+

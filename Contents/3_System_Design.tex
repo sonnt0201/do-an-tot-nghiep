@@ -130,7 +130,7 @@ Khối đầu vào tín hiệu và khối chuyển đổi tín hiệu cũng đư
 
 Thiết bị giao tiếp với phần mềm giải mã thông qua mạng LAN, sử dụng khối Ethernet.
 
-\subsubsection{Lựa chọn linh kiện}
+\subsubsection{Lựa chọn linh kiện và vẽ sơ đồ nguyên lý}
 
 \textbf{a.  Khối xử lý trung tâm}
 
@@ -173,7 +173,7 @@ Từ những yêu cầu trên , lựa chọn STM32F407VET6 là vi điều khiể
 \end{figure}
 
 
-\hspace{0.8cm} Sơ đồ nguyên lý mạch:
+Sơ đồ nguyên lý mạch:
 
 \begin{itemize}
     \item Nguồn cấp 3.3V được đưa vào các chân VDD và Vref của module, các chân VSS được nối đất. Thiết kế nguồn nối với đất qua các tụ Bypass có nhiệm vụ lọc nhiễu cao tần cho nguồn nuôi vi điều khiển.
@@ -213,7 +213,7 @@ Với danh sách loại đầu vào ở trên, thiết kế khối đầu vào t
     \item Các điểm hàn nối dây: Trường hợp các loại màn hình khác, sẽ hàn các đường tín hiệu đó thông qua các đầu tiếp điểm hàn, kèm dây điện nối (nếu cần). Vị trí mối hàn, đấu dây sẽ cố định theo từng loại tín hiệu màn hình.
 \end{itemize}
 
-Số chân tối đa cho khối đầu vào tín hiệu là 40 chân.
+Tổng số chân cho khối đầu vào tín hiệu là 40 chân.
 
 \begin{figure}[!ht]
     \centering
@@ -221,6 +221,137 @@ Số chân tối đa cho khối đầu vào tín hiệu là 40 chân.
     \caption{Sơ đồ nguyên lý khối đầu vào tín hiệu}
     \label{fig:hinh3.6}
 \end{figure}
+
+
+\textbf{Khối nguồn và Ethernet}
+
+Yêu cầu thiết kế: 
+
+\begin{itemize}
+    \item Khối nguồn: 
+    
+    \begin{itemize}
+        \item Cấp nguồn 3.3V cho khối khác. Chuyển đổi nguồn 5V của POE sang 3.3V.
+        \item Cách ly và chống nhiễu.
+    \end{itemize}
+
+    \item Khối Ethernet:
+    \begin{itemize}
+        \item Chống nhiễu.
+        \item Giao tiếp với MCU (STM32) theo chuẩn SPI.
+    \end{itemize}
+\end{itemize}
+
+Với những yêu cầu trên, lựa chọn:
+
+\begin{itemize}
+    \item B0505S-2WR2 và AMS1117-3.3V để cách ly và chuyển đổi nguồn POE thành nguồn 3.3V.
+    \item Chip W5500 để giao tiếp Ethernet.
+\end{itemize}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1.0\linewidth]{Figures/Chap3_Power-and-Ethernet-block-principle.pdf}
+    \caption{Sơ đồ nguyên lý khối nguồn và giao tiếp Ethernet}
+    \label{fig:hinh3.7}
+\end{figure}
+
+Giải thích khối nguồn:
+\begin{itemize}
+    \item Mô-đun DP5405 để nhận nguồn từ PoE Switch (thông qua jack RJ45), chuyển đổi sang điện áp 5VDC để cấp nguồn cho toàn bộ thiết bị.
+    
+    \item IC B0505S: Có chức năng chuyển đổi điện áp 5VDC sang điện áp 5VDC cách ly. Việc cách ly nguồn để góp phần cách ly tín hiệu điện giữa tín hiệu của cáp màn hình với tín hiệu khác trong mạch, để 2 loại tín hiệu này không ảnh hưởng tới nhau.
+    
+    \item IC AMS1117-3.3V: Là IC điều chỉnh nguồn, đầu ra IC sẽ cung cấp nguồn điện áp 3.3V cho các linh kiện khác trong mạch. Có 2 IC trong đó IC thứ nhất để chuyển đổi điện áp 5VDC sang 3.3VDC, IC thứ hai chuyển đổi điện áp 5VDC cách ly sang 3.3V, từ đó điện áp 3.3V này cũng được cách ly với điện áp 3.3VDC ở IC thứ nhất. 
+\end{itemize}
+
+Giải thích khối Ethernet:
+
+\begin{itemize}
+    \item Jack cắm Ethernet: Sử dụng jack RJ45 HY931147C để cắm dây Ethernet vào thiết bị, vừa để dẫn nguồn cho thiết bị, vừa để hỗ trợ giao tiếp mạng Ethernet.
+    \item IC điều khiển Ethernet: Sử dụng IC W5500 để cung cấp các chức năng liên quan đến truyền/nhận dữ liệu thông qua Ethernet cho khối Xử lý trung tâm.
+\end{itemize}
+
+\subsection{Thiết kế firmware thiết bị đọc màn hình}
+
+\subsubsection {Kiến trúc triển khai firmware}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1.0\linewidth]{Figures/Chap3_Device-block-firmware-architecture.png}
+    \caption{Sơ đồ khối triển khai phần mềm Device}
+    \label{fig:hinh3.8}
+\end{figure}
+
+Các khối triển khai thực hiện các chức năng đã được nêu ra trong hình \ref{fig:hinh3.2}
+
+Mỗi khối triển khai ở hình \ref{fig:hinh3.8} được tổ chức thành một module mã nguồn, xử lý và trao đổi dữ liệu với nhau.
+
+\begin{itemize}
+    \item Capture Driver: Nhận các SPI frame từ CPLD, đóng gói thành các dữ liệu màn hình dạng byte data, cùng thời gian nhận dữ liệu và loại màn hình.
+    \item Device Driver: Xử lý giao thức. Xử lý các gói tin nhận được (dạng byte frame) từ đầu vào Ethernet và chuyển tiếp tới các khối Capture Driver, OTA và Device peripherals để thực hiện các logic chính. Đồng thời đẩy các gói tin màn hình (dạng byte frame) cho khối Internet để thực hiện gửi cho phần mềm máy tính (Device Service)
+    \item Internet Driver: Giao tiếp với chip W5500 để thực hiện trao đổi gói tin qua mạng LAN.
+    \begin{itemize}
+        \item Xin cấp phát IP tĩnh từ router
+        \item Nhận địa chỉ IP của phần mềm máy tính (Device Service) thông qua gói tin được broadcast
+        \item Trao đổi dữ liệu dạng byte frame với phần mềm máy tính (Device Service) thông qua giao thức TCP, cấu trúc gói tin tuân theo API đã được quy ước.
+        \item Khi bị mất kết nối với phần mềm Device Service, cố gắng kết nối trở lại với phần mềm.
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Trình tự giao tiếp giữa các khối}
+
+\textbf{a. Nhận gói tin broadcast và kết nối tới phần mềm Device Service}
+
+\begin{figure}[!ht]
+     \centering
+    \includegraphics[width=0.8\linewidth]{Figures/Chap3_Device-firm-implementation-handshake.png}
+    \caption{Trình tự giao tiếp: Thiết lập kết nối tới phần mềm giải mã Device Service}
+    \label{fig:hinh3.9}
+\end{figure}
+
+Gói tin broadcast của phần mềm giải mã (Device Service) có chứa địa chỉ (IP và PORT) của phần mềm. Thiết bị nhận được gói tin, lấy thông tin địa chỉ và gửi yêu cầu thiết lập kết nối tới phần mềm (handshake).
+
+Trong trường hợp không kết nối được hoặc mất kết nối, thiết bị sẽ liên tục yêu cầu kết nối trở lại tới phần mềm.
+
+\textbf{b. Đẩy dữ liệu thô màn hình (dạng byte)}
+
+\begin{figure}[!ht]
+     \centering
+    \includegraphics[width=1.0\linewidth]{Figures/Chap3_Device_firmware-implemetation-stream-screen.png}
+    \caption{Trình tự giao tiếp: thu thập và đẩy dữ liệu màn hình}
+    \label{fig:hinh3.10}
+\end{figure}
+
+Tín hiệu màn hình được thu thập bởi bộ chuyển đổi tín hiệu, và đẩy tới \textbf{Capture Driver}, sử dụng SPI.
+
+Khối Capture Driver nhận từng byte, lưu trữ tạm vào 1 buffer cho đến khi độ dài buffer bằng độ dài tiêu chuẩn 1 frame màn hình (22 byte đối với máy ZCheng). Khi đó, dữ liệu buffer được lấy ra để tạo thành 1 frame màn hình.
+
+Mỗi frame màn hình chữa dữ liệu "tổng tiền", "số lít", "đơn giá" đã được mã hóa, sẽ được lưu tạm vào 1 FIFO database (tại memory) cùng với thời gian nhận frame. Buffer nhận sau đó được xóa để bắt đầu nhận frame mới.
+
+Do tần số nhận frame cao (100Hz), không thể gửi dữ liệu với tần số như vậy thông qua chip Ethernet, dữ liệu màn hình được lưu tạm vào 1 FIFO Database. Ở mỗi lần gửi, \textbf{Internet Driver} kiểm tra kết nối hiện tại với phần mềm Device Service. Nếu kết nối vẫn tốt, \textbf{Capture Driver} sẽ lấy nhiều frame từ database cùng một lúc để gửi đến phần mềm Device Service.
+
+\textbf{c. Cập nhật firmware}
+
+\begin{figure}[!ht]
+     \centering
+    \includegraphics[width=1.0\linewidth]{Figures/Chap3_Device-firm-implementation-ota.png}
+    \caption{Trình tự giao tiếp: cập nhật firmware từ xa (OTA)}
+    \label{fig:hinh3.11}
+\end{figure}
+
+Phần mềm Device Service gửi yêu cầu bắt đầu tiến trình OTA cùng với kích thước firmware mới. Thiết bị thông báo lại tên file firmware muốn cập nhật (file 1 hoặc 2). 
+
+Sau đó, Device Service gửi từng đoạn dữ liệu firmware mới cùng offset. Thiết bị dữ liệu vào flash, tại vị trí cho firmware mới.
+
+Khi việc truyền nhận firmware mới hoàn tất, thiết bị đặt con trỏ chứa địa chỉ firmware theo giá trị địa chỉ mới và tiến hành reset.
+
+
+
+
+
+
+
 
 
 

@@ -21,9 +21,12 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Sơ đồ khối chức năng phần mềm giải mã (Device Service)}{8}{subsubsection.23}%
 \contentsline {subsection}{\numberline {3.3}Thiết kế phần cứng thiết bị đọc màn hình}{9}{subsection.25}%
 \contentsline {subsubsection}{\numberline {3.3.1}Sơ đồ khối phần cứng thiết bị đọc màn hình}{9}{subsubsection.26}%
-\contentsline {subsubsection}{\numberline {3.3.2}Lựa chọn linh kiện}{9}{subsubsection.28}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 4. MÔ PHỎNG VÀ KẾT QUẢ}{13}{figure.caption.30}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion KẾT LUẬN}{14}{section*.31}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion TÀI LIỆU THAM KHẢO}{15}{section*.32}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion PHỤ LỤC}{16}{section*.33}%
-\contentsline {section}{\numberline {A}Một số phương pháp đo và hiệu chuẩn}{16}{appendix.34}%
+\contentsline {subsubsection}{\numberline {3.3.2}Lựa chọn linh kiện và vẽ sơ đồ nguyên lý}{9}{subsubsection.28}%
+\contentsline {subsection}{\numberline {3.4}Thiết kế firmware thiết bị đọc màn hình}{14}{subsection.32}%
+\contentsline {subsubsection}{\numberline {3.4.1}Kiến trúc triển khai firmware}{14}{subsubsection.33}%
+\contentsline {subsubsection}{\numberline {3.4.2}Trình tự giao tiếp giữa các khối}{15}{subsubsection.35}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 4. MÔ PHỎNG VÀ KẾT QUẢ}{19}{figure.caption.38}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion KẾT LUẬN}{20}{section*.39}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion TÀI LIỆU THAM KHẢO}{21}{section*.40}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion PHỤ LỤC}{22}{section*.41}%
+\contentsline {section}{\numberline {A}Một số phương pháp đo và hiệu chuẩn}{22}{appendix.42}%
