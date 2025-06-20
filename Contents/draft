@@ -1,0 +1,99 @@
+
+ \begin{longtable}{|p{4.5cm}|p{8cm}|}
+ 
+\caption{Danh sách và mô tả các hàm trong module \texttt{Internet}}
+    \label{tab:internet-functions} \\
+
+\hline
+\textbf{Tên hàm} & \textbf{Mô tả} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Tên hàm} & \textbf{Mô tả} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+\texttt{Internet\_Initialize} &
+Khởi tạo module Internet dựa trên cấu hình lưu trong flash, khởi tạo chip W5500 và thiết lập thông tin mạng. Đăng ký các callback để xử lý dữ liệu nhận \\
+\hline
+
+\texttt{Internet\_IPConfig} &
+Cập nhật địa chỉ IP và cổng TCP của `Device Service`. Thông tin cấu hình được lưu vào biến cấu hình toàn cục để sử dụng khi kết nối. \\
+\hline
+
+\texttt{Internet\_1sCb} &
+Được gọi mỗi 1s để đếm thời gian đã kết nối bằng cách tăng biến đếm lên 1 \\
+\hline
+
+\texttt{Internet\_Process} &
+Được đặt trong vòng lặp chính của hệ thống để liên tục xử lý các hoạt động mạng bao gồm:
+\begin{itemize}
+    \item Gán IP động qua DHCP 
+    \item Tìm kiếm `Device Service` nội bộ qua UDP broadcast
+    \item Thiết lập và duy trì kết nối TCP
+    \item Nhận dữ liệu và gọi callback
+    \item Tự động yêu cầu kết nối lại khi mất kết nối
+\end{itemize}
+Trả về \texttt{true} nếu có kết nối mạng hoạt động. \\
+\hline
+
+\texttt{Internet\_Tx} &
+Gửi dữ liệu đến `Device Service` thông qua W5500. \\
+\hline
+
+\texttt{Internet\_Close} &
+Gửi yêu cầu đóng kết nối hiện tại đến `Device Service`. Dùng trong trường hợp cần chủ động ngắt kết nối. \\
+\hline
+\end{longtable}
+
+\begin{longtable}{|p{4.5cm}|p{8cm}|}
+\caption{Danh sách và mô tả các hàm trong module \texttt{Device Driver}} \label{tab:device-functions} \\
+\hline
+\textbf{Tên hàm} & \textbf{Mô tả} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Tên hàm} & \textbf{Mô tả} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+\texttt{Device\_Initialize} &
+Khởi tạo `Device Driver` bằng cách sử dụng cấu hình của người dùng. Hàm này đồng thời khởi tạo các khối liên quan như: `Internet` và `Capture Driver`. Tham số truyền vào là hai SPI handle tương ứng cho hai khối đó. \\
+\hline
+
+\texttt{Device\_GpioCb} &
+Callback được gọi khi một chân GPIO được kích hoạt ngắt. Dùng để xử lý các tác vụ liên quan đến ngắt ngoài như điều khiển relay hoặc các thiết bị ngoại vi. \\
+\hline
+
+\texttt{Device\_rxCaptureCb} &
+Callback được gọi khi nhận frame từ firmware CPLD thông qua giao tiếp SPI2. Thường được gắn với ngắt truyền nhận SPI2. \\
+\hline
+
+\texttt{Device\_Process} &
+Đặt trong vòng lặp chính của chương trình để xử lý việc gửi khung hình tới `Device Service`. Hàm này liên tục lấy dữ liệu màn hình từ `Capture Driver`, sau đó gửi tới `Internet` để chuyển tiếp ra ngoài, tùy theo trạng thái kết nối. \\
+\hline
+
+\end{longtable}
+
+
+
+
+
+
+
+
+

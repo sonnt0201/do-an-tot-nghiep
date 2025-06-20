@@ -8,7 +8,30 @@
 \contentsline {figure}{\numberline {3.5.}{\ignorespaces Sơ đồ nguyên lý khối xử lý trung tâm}}{11}{figure.caption.29}%
 \contentsline {figure}{\numberline {3.6.}{\ignorespaces Sơ đồ nguyên lý khối đầu vào tín hiệu}}{12}{figure.caption.30}%
 \contentsline {figure}{\numberline {3.7.}{\ignorespaces Sơ đồ nguyên lý khối nguồn và giao tiếp Ethernet}}{13}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.8.}{\ignorespaces Sơ đồ khối triển khai phần mềm Device}}{14}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.8.}{\ignorespaces Sơ đồ khối triển khai firmware cho thiết bị}}{14}{figure.caption.34}%
 \contentsline {figure}{\numberline {3.9.}{\ignorespaces Trình tự giao tiếp: Thiết lập kết nối tới phần mềm giải mã Device Service}}{15}{figure.caption.36}%
 \contentsline {figure}{\numberline {3.10.}{\ignorespaces Trình tự giao tiếp: thu thập và đẩy dữ liệu màn hình}}{16}{figure.caption.37}%
 \contentsline {figure}{\numberline {3.11.}{\ignorespaces Trình tự giao tiếp: cập nhật firmware từ xa (OTA)}}{17}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.12.}{\ignorespaces Sơ đồ khối triển khai phần mềm Device Service}}{18}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.13.}{\ignorespaces Trình tự giao tiếp cho phần mềm giải mã: Giải mã màn hình}}{20}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.14.}{\ignorespaces Trình tự giao tiếp phần mềm trong trường hợp điều khiển relay}}{21}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.15.}{\ignorespaces Trình tự giao tiếp phần mềm trong trường hợp thực hiện OTA}}{22}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.16.}{\ignorespaces Sơ đồ khối triển khai phần mềm giao diện}}{23}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.17.}{\ignorespaces Giao tiếp giữa các process của ứng dụng thông qua IPC}}{24}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.1.}{\ignorespaces Mạch PCB - Mặt trên}}{25}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.2.}{\ignorespaces Mạch PCB - Mặt ngang và mặt dưới}}{25}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.3.}{\ignorespaces Sản phẩm thiết bị đọc ghi màn hình cột bơm: mặt trên}}{26}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.4.}{\ignorespaces Sản phẩm thiết bị đọc ghi màn hình cột bơm: mặt ngang và dưới}}{26}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.5.}{\ignorespaces Triển khai: cấu hình các chân trong STM32CubeIDE}}{27}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.6.}{\ignorespaces Thuật toán xử lý ngắt nhận dữ liệu màn hình}}{28}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.7.}{\ignorespaces Thuật toán xử lý ngắt nhận dữ yêu cầu Device Service}}{29}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.8.}{\ignorespaces Thuật toán cho chương trình chính}}{30}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.9.}{\ignorespaces :Tạo C++ Win32 Project trên Visual Studio}}{32}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.10.}{\ignorespaces Thuật toán giải mã màn hình và phát hiện lượt bơm}}{34}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.11.}{\ignorespaces Các trường dữ liệu trong một Log hoặc Sublog}}{35}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.12.}{\ignorespaces Sơ đồ trạng thái cho cột bơm}}{36}{figure.caption.68}%
+\contentsline {figure}{\numberline {4.13.}{\ignorespaces Thuật toán thực hiện OTA trên Device Service}}{38}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.14.}{\ignorespaces Device Service: Các file logs}}{40}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.15.}{\ignorespaces Mẫu dự án sử dụng Electron + Vite + ReactJS}}{41}{figure.caption.72}%
+\contentsline {figure}{\numberline {4.16.}{\ignorespaces Các trường lưu trong bảng Log của Database}}{42}{figure.caption.73}%
+\contentsline {figure}{\numberline {4.17.}{\ignorespaces Giao diện hiển thị Client UI}}{43}{figure.caption.74}%

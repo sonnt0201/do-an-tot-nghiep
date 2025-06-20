@@ -1,0 +1,41 @@
+  sequenceDiagram
+ 
+    participant device as DEVICE
+    
+    box Device Service
+    participant idevice as Device Interface
+      participant ilogi-event as Client Interface - Event
+    end
+
+    participant logi as CLIENT UI
+
+  activate logi
+  logi ->> +ilogi-event: request to update firmware
+  deactivate logi
+  ilogi-event ->> -idevice: request to update firmware (forwarded)
+  activate idevice
+  idevice ->> idevice : retrieve firm files
+  idevice ->> idevice : verify hash 
+  idevice ->> idevice : store firm files to memory
+  idevice -->> +ilogi-event: retrieve firm file sucessfully
+   deactivate idevice
+  ilogi-event -->> -logi: retrieve firm file sucessfully (forwarded)
+ 
+ activate logi
+ logi ->> +ilogi-event: request to activate firmware
+ deactivate logi
+ ilogi-event ->> -idevice: request to activate firmware (forwarded)
+
+ activate idevice
+ idevice ->> -device: request to start OTA (with firm files' size)
+activate device
+device -->> +idevice : choose firmware file (1 or 2)
+idevice ->> -device: send selected firm file
+device ->> device: write new firm to FLASH
+device -->> +idevice: notify status
+idevice ->> -device : activate firm 
+device ->> device: set new firm address
+device -->> idevice: notify updated
+
+device ->> device:  [if write successfully] reset device
+

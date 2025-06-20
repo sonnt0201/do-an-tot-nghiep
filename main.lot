@@ -1,4 +1,11 @@
 \babel@toc {nil}{}\relax 
-\contentsline {table}{\numberline {0.1.}{\ignorespaces Bảng cập nhật báo cáo.}}{iv}{table.1}%
-\contentsline {table}{\numberline {0.2.}{\ignorespaces Bảng kế hoạch dự án.}}{v}{table.2}%
-\contentsline {table}{\numberline {0.3.}{\ignorespaces Biên bản cuộc họp.}}{vi}{table.3}%
+\contentsline {table}{\numberline {0.1.}{\ignorespaces Bảng cập nhật báo cáo.}}{v}{table.1}%
+\contentsline {table}{\numberline {0.2.}{\ignorespaces Bảng kế hoạch dự án.}}{vi}{table.2}%
+\contentsline {table}{\numberline {0.2.}{\ignorespaces Bảng kế hoạch dự án.}}{vii}{table.2}%
+\contentsline {table}{\numberline {0.3.}{\ignorespaces Biên bản cuộc họp.}}{viii}{table.3}%
+\contentsline {table}{\numberline {4.1.}{\ignorespaces Cấu trúc gói tin giữa Device và Device Service}}{31}{table.caption.61}%
+\contentsline {table}{\numberline {4.2.}{\ignorespaces Danh sách các loại CMD trong enum Cmd\_t}}{32}{table.2}%
+\contentsline {table}{\numberline {4.3.}{\ignorespaces Các loại sự kiện màn hình}}{35}{table.caption.66}%
+\contentsline {table}{\numberline {4.4.}{\ignorespaces Mô tả các trạng thái máy (Machine State)}}{36}{table.caption.67}%
+\contentsline {table}{\numberline {4.5.}{\ignorespaces Callback được gọi sau khi xác định trạng thái mới}}{37}{table.5}%
+\contentsline {table}{\numberline {4.6.}{\ignorespaces Danh sách các message\_type của Device Service}}{39}{table.6}%

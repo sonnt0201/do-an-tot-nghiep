@@ -1,5 +1,5 @@
 \section*{CHƯƠNG 3. THIẾT KẾ HỆ THỐNG}
-    \addcontentsline{toc}{section}{\numberline{}CHƯƠNG 3. PHƯƠNG PHÁP LUẬN}
+    \addcontentsline{toc}{section}{\numberline{}CHƯƠNG 3. THIẾT KẾ HỆ THỐNG}
     
 \setcounter{section}{3}
     \setcounter{subsection}{0}
@@ -279,7 +279,7 @@ Giải thích khối Ethernet:
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=1.0\linewidth]{Figures/Chap3_Device-block-firmware-architecture.png}
-    \caption{Sơ đồ khối triển khai phần mềm Device}
+    \caption{Sơ đồ khối triển khai firmware cho thiết bị}
     \label{fig:hinh3.8}
 \end{figure}
 
@@ -346,16 +346,161 @@ Sau đó, Device Service gửi từng đoạn dữ liệu firmware mới cùng o
 
 Khi việc truyền nhận firmware mới hoàn tất, thiết bị đặt con trỏ chứa địa chỉ firmware theo giá trị địa chỉ mới và tiến hành reset.
 
+\subsection{Thiết kế phần mềm giải mã Device Service}
+
+\subsubsection{Kiến trúc triển khai phần mềm}
+
+\begin{figure}[!ht]
+     \centering
+    \includegraphics[width=1.0\linewidth]{Figures/DeviceService_implementation-block.png}
+    \caption{Sơ đồ khối triển khai phần mềm Device Service}
+    \label{fig:DeviceService_implementation-block}
+\end{figure}
+
+Các khối triển khai thực hiện các chức năng đã nêu ở
+sơ đồ khối chức năng (hình \ref{fig:hinh3.3}). Về mặt triển khai, Device Service là phần mềm đa luồng, chạy dưới dạng tiến trình chạy ngầm trên máy tính nội bộ, trong đó có các luồng chính:
+\begin{itemize}
+    \item Device Communication giữ kết nối và giao tiếp và điều khiển thiết bị đọc ghi màn hình (Device), thực hiện giải mã và chốt phiên bơm.
+    \item Client Event: luồng này trao đổi các sự kiện với phần mềm giao diện bao gồm:
+    \begin{itemize}
+        \item Các phiên bơm (gọi là log).
+        \item Yêu cầu bật tắt relay (từ phía giao diện) và thông báo trạng thái relay (từ phía thiết bị) cho giao diện.
+        \item Yêu cầu cập nhật firmware và nội dung file firmware.
+    \end{itemize}
+
+    \item Client Raw: luồng riêng biệt để gửi trực tiếp các màn hình đã giải mã theo thời gian thực, để giao diện có thể hiển thị giá trị tương ứng với màn hình cây xăng thực tế.
+    
+    \item Broadcast: luồng độc lập để broadcast gói tin UDP chứa địa chỉ (IP và PORT) của Device Service này cho toàn bộ thiết bị trong mạng LAN. Các thiết bị đọc ghi màn hình nhận được địa chỉ và chủ động kết nối.
+\end{itemize}
+
+Các luồng giao tiếp với nhau thông qua các hàng đợi (Queue). Các hàng đợi này được thiết kế để thread-safe, tức là các luồng chạy song song có thế truy cập vào hàng đợi mà không xảy ra xung đột.
+
+\subsubsection{Trình tự giao tiếp và thuật toán cho các khối}
+
+\hspace{0.8cm} Phần này trình bày trình tự giao tiếp giữa các khối trong các use case cụ thể, đồng thời trình bày các lưu đồ thuật toán quan trong. Các use case chính bao gồm:
+
+\begin{itemize}
+    \item Giải mã và gửi giá trị màn hình theo thời gian thực
+    \item Cập nhật firmware cho thiết bị
+    \item Gửi yêu cầu đóng ngắt relay 
+\end{itemize}
+\textbf{
+    a. Giải mã, gửi giá trị màn hình và phát hiện phiên bơm
+}
+
+\begin{figure}[!ht]
+     \centering
+    \includegraphics[width=1.0\linewidth]{Figures/DeviceService_implementation-sequence-stream-screens.png}
+    \caption{Trình tự giao tiếp cho phần mềm giải mã: Giải mã màn hình}
+    \label{fig:DeviceService_implementation-sequence-stream-screens}
+\end{figure}
+
+Việc giải mã tiến hành qua các bước sau:
+
+- Giải mã dữ liệu thô dạng byte thành giá trị màn hình (số tiền, số lít, đơn giá).
+
+- Phân loại sự kiện màn hình (screen event): 
+
+- Phát hiện trạng thái máy (machine state).
+
+- Phát hiện phiên bơm (log) nếu có.
+
+Dữ liệu thô từ màn hình cây xăng được đọc liên tục, decode và so sánh để xác định giá trị và độ biến thiên giá trị đang hiển thị ở cột bơm (`bằng 0 | đang tăng | đang dừng`), xác định trạng thái hiện tại của cột bơm (`reset | đang bơm | tạm dừng bơm`). Từ đó đưa ra quyết định chốt một lượt bơm - gọi là 1 `log`.
 
 
 
 
 
 
+\textbf{
+b. Điều khiển relay cho thiết bị 
+}
+
+Từ giao diện người dùng Client UI, có thể:
+
+\begin{itemize}
+    \item Gửi yêu cầu bật tắt relay. 
+    \item Đặt ngưỡng giới hạn trên (số tiền hoặc số lít) để relay tự động tắt.
+\end{itemize}
 
 
+\begin{figure}[!ht]
+     \centering
+    \includegraphics[width=0.8\linewidth]{Figures/DeviceService_implemetation-sequece-relay-control.png}
+    \caption{Trình tự giao tiếp phần mềm trong trường hợp điều khiển relay}
+    \label{fig:DeviceService_implemetation-sequece-relay-control}
+\end{figure}
 
+\FloatBarrier
 
+\textbf{
+c. Cập nhật firmware từ xa (OTA) 
+}
+
+File firmware mới được gửi từ Client UI, được mã hóa dưới dạng base64 string. Phần mềm Device Service giải mã và kiểm tra hợp lệ (verify hash) rồi lưu tạm vào RAM. Sau khi nhận được yêu cầu kích hoạt quá trình OTA, Device Service bắt đầu gửi từng đoạn firmware mới tới thiết bị đọc ghi màn hình.
+
+\begin{figure}[!ht]
+     \centering
+    \includegraphics[width=0.8\linewidth]{Figures/Chap3_Device-firm-implementation-ota.png}
+    \caption{Trình tự giao tiếp phần mềm trong trường hợp thực hiện OTA}
+    \label{fig:Chap3_Device-firm-implementation-ota}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Giao diện điều khiển cho người dùng}
+
+\hspace{0.8cm} Phần mềm giao diện được thiết kế cho người dùng cuối để lưu trữ, hiển thị và điều khiển phần mềm giải mã Device Service.
+
+Yêu cầu thiết kế:
+
+\begin{itemize}
+    \item Giao diện trực quan, gần gũi với người dùng.
+    \item Độc lập với Device Service, kiến trúc có thể dễ dàng mở rộng, hướng tới trở thành công cụ trực quan có thể quan sát và hỗ trợ debug cho Device Service.
+    \item Tương tác với cơ sở dữ liệu để đọc ghi các phiên bơm.
+\end{itemize}
+
+\begin{figure}[!ht]
+     \centering
+    \includegraphics[width=0.8\linewidth]{Figures/ClientUI_implementation-block.png}
+    \caption{Sơ đồ khối triển khai phần mềm giao diện}
+    \label{fig:ClientUI_implementation-block}
+\end{figure}
+
+Phần mềm giao diện xây dựng trên môi trường Nodejs, sử dụng framework Electron để tạo một web-based Desktop App. Phần mềm gồm 2 tiến trình (process) chính:
+
+\begin{itemize}
+    \item Main Process có thể tương tác trực tiếp với hệ điều hành thông qua môi trường NodeJS. Sử dụng để:
+    \begin{itemize}
+        \item Mở các cổng TCP hứng dữ liệu (màn hình thời gian thực, các events) từ phần mềm giải mã Device Service.
+        \item Xử lý các logic, tương tác với cơ sở dữ liệu: đọc và ghi các phiên bơm (log).
+        \item Chuyển tiếp các dữ liệu lên phía Renderer Process để hiển thị lên giao diện
+    \end{itemize}
+
+    \item Renderer Process là tiến trình sử dụng để hiển thị giao diện, tương tác với người dùng. Tiến trình này bản chất là 1 module có lõi là Chromium. Bản chất của việc render và hiển thị  sử dụng các công nghệ web broswer (HTML, CSS, JavaScript) để vẽ các element. Do đó, việc tương tác trực tiếp với hệ điều hành cũng bị hạn chế, cần có Main Process và IPC (InterProcess Communication) để người dùng thực hiện các tác vụ với hệ điều hành và cơ sở dữ liệu thông qua giao diện.
+    
+\end{itemize}
+
+Phần mềm có một cơ chế IPC (InterProcess Communication) riêng để các process giao tiếp với nhau, giúp chia sẻ dữ liệu an toàn.
+\begin{figure}[!ht]
+     \centering
+    \includegraphics[width=0.8\linewidth]{Figures/Electron_IPC_mechanism.jpg}
+    \caption{Giao tiếp giữa các process của ứng dụng thông qua IPC}
+    \label{fig:Electron_IPC_mechanism}
+\end{figure}
+
+\FloatBarrier
+\subsection{Tổng kết chương}
+
+Trong chương này đã trình bày các khối chức năng của các thành phần hệ thống. Từ yêu cầu về chức năng đó, đưa ra thiết kế chi tiết bao gồm:
+
+\begin{itemize}
+    \item Sơ đồ nguyên lý mạch cứng 
+    \item Sơ đồ triển khai phần mềm
+    \item Tương tác giữa các khối trong phần mềm.
+\end{itemize}
+
+Và diễn giải các sơ đồ.
 
 
 

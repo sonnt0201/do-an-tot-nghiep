@@ -1,0 +1,63 @@
+sequenceDiagram
+    participant device as DEVICE
+    
+    box Device Service
+    participant idevice as Device Interface
+    participant logger as Logger
+      participant ilogi-event as Client Interface - Event
+    participant ilogi-raw as Client Interface - Raw Screen
+    end
+
+     participant logi as CLIENT UI
+
+    device ->> +idevice: screen message  
+    idevice ->> -logger: screen byte frame (forwarded)
+
+    activate logger
+    logger ->> logger: decode byte frame
+    logger ->> logger: detect screen event
+    logger ->> logger : check relay-off condition
+    deactivate logger 
+
+    opt satisfy relay-off condition 
+    activate logger
+    logger ->> +idevice: create and send relay-off request
+    
+    idevice ->> +device: forward relay-off request
+    device -->> -idevice : report relay state
+    deactivate idevice
+    logger ->> logger: save time when request to turn off 
+    deactivate logger
+    end
+
+    logger ->> logger: check if relay is off properly
+
+    opt if relay's off but screen values keep increasing
+      activate logger
+      logger ->> logger: mark relay state as error
+      logger ->> +ilogi-event: notify relay error
+      deactivate logger
+      ilogi-event ->> -logi: notify relay error (forwarded)
+    end
+
+
+    activate logger
+    logger ->> logger: create Screen_t object
+    logger ->> +ilogi-raw: realtime Screen
+    deactivate logger
+
+    ilogi-raw ->> -logi: realtime Screen (forwarded)
+
+    activate logger
+    logger ->> logger: log process (check screens to detect log)
+    deactivate logger
+
+    opt log detected
+
+        activate logger
+        logger ->> logger: create log 
+        logger ->> +ilogi-event: log
+        deactivate logger
+
+        ilogi-event ->> -logi: log (forwarded)
+    end

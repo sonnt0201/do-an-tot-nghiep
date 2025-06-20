@@ -1,0 +1,34 @@
+  sequenceDiagram
+ 
+    participant device as DEVICE
+    
+    box Device Service
+    participant idevice as Device Interface
+    participant logger as Logger
+      participant ilogi-event as Client Interface - Event
+    end
+
+    participant logi as CLIENT UI
+
+  
+  logi ->> +ilogi-event: request to set relay
+  ilogi-event ->> -idevice: request to set relay (forwarded)
+ 
+  idevice ->> logger: change relay state value
+  
+  opt request contains relay-off condition
+  idevice ->> logger: change relay-off condition
+  end
+
+
+  logger ->> idevice: send new relay state
+    activate idevice 
+    activate logger
+  idevice ->> device: request to set relay
+  device ->> device : set relay state
+  device -->> idevice: notify relay state
+  deactivate idevice
+  logger -->> +ilogi-event: response relay set sucessfully
+  deactivate logger
+  ilogi-event -->> -logi: response relay set sucesfully (forwarded)
+

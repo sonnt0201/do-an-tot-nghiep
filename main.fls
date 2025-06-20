@@ -146,6 +146,8 @@ INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/placeins/placeins.sty
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/placeins/placeins.sty
 INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/svg/svg.sty
 INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/svg/svg.sty
 INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/trimspaces/trimspaces.sty
@@ -461,12 +463,139 @@ INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
 INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
 INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
 INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
+INPUT ./Figures/DeviceService_implementation-block.png
+INPUT ./Figures/DeviceService_implementation-block.png
+INPUT ./Figures/DeviceService_implementation-block.png
+INPUT ./Figures/DeviceService_implementation-block.png
+INPUT ./Figures/DeviceService_implementation-block.png
+INPUT ./Figures/DeviceService_implementation-sequence-stream-screens.png
+INPUT ./Figures/DeviceService_implementation-sequence-stream-screens.png
+INPUT ./Figures/DeviceService_implementation-sequence-stream-screens.png
+INPUT ./Figures/DeviceService_implementation-sequence-stream-screens.png
+INPUT ./Figures/DeviceService_implementation-sequence-stream-screens.png
+INPUT ./Figures/DeviceService_implemetation-sequece-relay-control.png
+INPUT ./Figures/DeviceService_implemetation-sequece-relay-control.png
+INPUT ./Figures/DeviceService_implemetation-sequece-relay-control.png
+INPUT ./Figures/DeviceService_implemetation-sequece-relay-control.png
+INPUT ./Figures/DeviceService_implemetation-sequece-relay-control.png
+INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
+INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
+INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
+INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
+INPUT ./Figures/ClientUI_implementation-block.png
+INPUT ./Figures/ClientUI_implementation-block.png
+INPUT ./Figures/ClientUI_implementation-block.png
+INPUT ./Figures/ClientUI_implementation-block.png
+INPUT ./Figures/ClientUI_implementation-block.png
+INPUT ./Figures/Electron_IPC_mechanism.jpg
+INPUT ./Figures/Electron_IPC_mechanism.jpg
+INPUT ./Figures/Electron_IPC_mechanism.jpg
+INPUT ./Figures/Electron_IPC_mechanism.jpg
+INPUT ./Figures/Electron_IPC_mechanism.jpg
 INPUT ./Contents/4_Simulation_results.tex
 INPUT ./Contents/4_Simulation_results.tex
 OUTPUT Contents/4_Simulation_results.aux
 INPUT ./Contents/4_Simulation_results.tex
 INPUT ./Contents/4_Simulation_results.tex
 INPUT Contents/4_Simulation_results.tex
+INPUT ./Figures/PCB_top-down.png
+INPUT ./Figures/PCB_top-down.png
+INPUT ./Figures/PCB_top-down.png
+INPUT ./Figures/PCB_top-down.png
+INPUT ./Figures/PCB_top-down.png
+INPUT ./Figures/PCB_side-view.png
+INPUT ./Figures/PCB_side-view.png
+INPUT ./Figures/PCB_side-view.png
+INPUT ./Figures/PCB_side-view.png
+INPUT ./Figures/PCB_side-view.png
+INPUT ./Figures/PCB_bottom-up.png
+INPUT ./Figures/PCB_bottom-up.png
+INPUT ./Figures/PCB_bottom-up.png
+INPUT ./Figures/PCB_bottom-up.png
+INPUT ./Figures/PCB_bottom-up.png
+INPUT ./Figures/Device_product-top-down.jpg
+INPUT ./Figures/Device_product-top-down.jpg
+INPUT ./Figures/Device_product-top-down.jpg
+INPUT ./Figures/Device_product-top-down.jpg
+INPUT ./Figures/Device_product-top-down.jpg
+INPUT ./Figures/Device_product-bottom-view.jpg
+INPUT ./Figures/Device_product-bottom-view.jpg
+INPUT ./Figures/Device_product-bottom-view.jpg
+INPUT ./Figures/Device_product-bottom-view.jpg
+INPUT ./Figures/Device_product-bottom-view.jpg
+INPUT ./Figures/Device_product-side-view.jpg
+INPUT ./Figures/Device_product-side-view.jpg
+INPUT ./Figures/Device_product-side-view.jpg
+INPUT ./Figures/Device_product-side-view.jpg
+INPUT ./Figures/Device_product-side-view.jpg
+INPUT ./Figures/Device_stm32-io-config.png
+INPUT ./Figures/Device_stm32-io-config.png
+INPUT ./Figures/Device_stm32-io-config.png
+INPUT ./Figures/Device_stm32-io-config.png
+INPUT ./Figures/Device_stm32-io-config.png
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
+INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/tfm/vntex/vnr/vntt12.tfm
+INPUT ./Figures/flowcharts-Device_Receive-screen-frame.png
+INPUT ./Figures/flowcharts-Device_Receive-screen-frame.png
+INPUT ./Figures/flowcharts-Device_Receive-screen-frame.png
+INPUT ./Figures/flowcharts-Device_Receive-screen-frame.png
+INPUT ./Figures/flowcharts-Device_Receive-screen-frame.png
+INPUT ./Figures/flowcharts-Device_handle-DS-req.png
+INPUT ./Figures/flowcharts-Device_handle-DS-req.png
+INPUT ./Figures/flowcharts-Device_handle-DS-req.png
+INPUT ./Figures/flowcharts-Device_handle-DS-req.png
+INPUT ./Figures/flowcharts-Device_handle-DS-req.png
+INPUT ./Figures/flowcharts-Device_Main loop.png
+INPUT ./Figures/flowcharts-Device_Main loop.png
+INPUT ./Figures/flowcharts-Device_Main loop.png
+INPUT ./Figures/flowcharts-Device_Main loop.png
+INPUT ./Figures/flowcharts-Device_Main loop.png
+INPUT ./Figures/DeviceService-create-project.png
+INPUT ./Figures/DeviceService-create-project.png
+INPUT ./Figures/DeviceService-create-project.png
+INPUT ./Figures/DeviceService-create-project.png
+INPUT ./Figures/DeviceService-create-project.png
+INPUT ./Figures/flowcharts-Log-Process.png
+INPUT ./Figures/flowcharts-Log-Process.png
+INPUT ./Figures/flowcharts-Log-Process.png
+INPUT ./Figures/flowcharts-Log-Process.png
+INPUT ./Figures/flowcharts-Log-Process.png
+INPUT ./Figures/DeviceService_log-info-entity.png
+INPUT ./Figures/DeviceService_log-info-entity.png
+INPUT ./Figures/DeviceService_log-info-entity.png
+INPUT ./Figures/DeviceService_log-info-entity.png
+INPUT ./Figures/DeviceService_log-info-entity.png
+INPUT ./Figures/LogProcess_Detect-machine-state.png
+INPUT ./Figures/LogProcess_Detect-machine-state.png
+INPUT ./Figures/LogProcess_Detect-machine-state.png
+INPUT ./Figures/LogProcess_Detect-machine-state.png
+INPUT ./Figures/LogProcess_Detect-machine-state.png
+INPUT ./Figures/flowcharts-DeviceService-OTA.png
+INPUT ./Figures/flowcharts-DeviceService-OTA.png
+INPUT ./Figures/flowcharts-DeviceService-OTA.png
+INPUT ./Figures/flowcharts-DeviceService-OTA.png
+INPUT ./Figures/flowcharts-DeviceService-OTA.png
+INPUT ./Figures/logs-txt-files-when-start-DeviceService.png
+INPUT ./Figures/logs-txt-files-when-start-DeviceService.png
+INPUT ./Figures/logs-txt-files-when-start-DeviceService.png
+INPUT ./Figures/logs-txt-files-when-start-DeviceService.png
+INPUT ./Figures/logs-txt-files-when-start-DeviceService.png
+INPUT ./Figures/ElectronViteReact-template.png
+INPUT ./Figures/ElectronViteReact-template.png
+INPUT ./Figures/ElectronViteReact-template.png
+INPUT ./Figures/ElectronViteReact-template.png
+INPUT ./Figures/ElectronViteReact-template.png
+INPUT ./Figures/DeviceService_log-info-entity.png
+INPUT ./Figures/DeviceService_log-info-entity.png
+INPUT ./Figures/DeviceService_log-info-entity.png
+INPUT ./Figures/DeviceService_log-info-entity.png
+INPUT ./Figures/DeviceServiceClient-init-ui.png
+INPUT ./Figures/DeviceServiceClient-init-ui.png
+INPUT ./Figures/DeviceServiceClient-init-ui.png
+INPUT ./Figures/DeviceServiceClient-init-ui.png
+INPUT ./Figures/DeviceServiceClient-init-ui.png
 INPUT ./Contents/Conclusion.tex
 INPUT ./Contents/Conclusion.tex
 INPUT ./Contents/Conclusion.tex
@@ -493,3 +622,4 @@ INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.p
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb
+INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb

@@ -1,0 +1,23 @@
+flowchart TD
+
+  id2[/Receive screen frame from **Device**/]
+  --> id3(Retrieve **Device** type)
+  --> id4(Choose **Device's** decoder )
+  --> id5(decode to screen string)
+  --> id6(parse to Screen Object)
+  --> id20{Satisfy off-condition ?}
+
+  id20 --"Yes"--> id22(Notify **Device** to turn off relay) --> id25(Save relay state as off) --> id30(Save time to turn off relay) -->id26
+
+  id26{State as **Off** but <br/> screen values keep <br/> increasing in 500ms} --Yes--> id27(Notify Relay Error) --> id7
+
+  id20--"No"--> id26
+
+  id26--"No"--> id7
+
+   id7(Detect screen event)
+  --> id8(Send screen to Screens Buffer)
+  --> id9(Detect machine state)
+  --> id10(check timepout and event change to cut log)
+  --> id11{Log detected ?}
+  --yes--> id12(Create log) --> id13[/Send log to Event Queue/]
