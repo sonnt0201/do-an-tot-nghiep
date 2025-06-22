@@ -1,5 +1,5 @@
 \section*{CHƯƠNG 4. TRIỂN KHAI VÀ THỬ NGHIỆM}
-    \addcontentsline{toc}{section}{\numberline{} CHƯƠNG 4. MÔ PHỎNG VÀ KẾT QUẢ}
+    \addcontentsline{toc}{section}{\numberline{} CHƯƠNG 4. TRIỂN KHAI VÀ THỬ NGHIỆM}
 \setcounter{section}{4}
     \setcounter{subsection}{0}
         \setcounter{figure}{0}
@@ -539,4 +539,71 @@ Sử dụng MUI để xây dựng các component:
     \label{fig:DeviceServiceClient-init-ui}
 \end{figure}
 
- 
+ \FloatBarrier
+
+ \subsection{Thử nghiệm và đánh giá kết quả thực tế}
+
+\hspace{0.8cm}Tiến hành lắp mạch vào cột bơm (hình \ref{fig:Device-installation-field}):
+\begin{figure}[!ht]
+     \centering
+    \includegraphics[width=0.6\linewidth]{Figures/Device-installation-field.jpg}
+    \caption{Lắp thiết bị đọc màn hình vào cột bơm}
+    \label{fig:Device-installation-field}
+\end{figure}
+\FloatBarrier
+Cài đặt Device Service tại trạm xăng, cấu hình danh sách các thiết bị trong trạm (hình \ref{fig:DeviceService-setup-onsite})
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.45\linewidth]{Figures/DeviceService_setup-last-step.png}
+    \hspace{0.02\textwidth}
+    \includegraphics[width=0.45\textwidth]{Figures/DeviceService_configfile.png}
+    \caption{Cài đặt và cấu hình cho Device Service tại hiện trường}
+    \label{fig:DeviceService-setup-onsite}
+\end{figure}
+\FloatBarrier
+Các tiêu chí đánh giá:
+
+\begin{longtable}{|p{5cm}|p{6cm}|p{2.5cm}|}
+\hline
+\textbf{Tiêu chí đánh giá} & \textbf{Phương pháp đánh giá} & \textbf{Kết quả} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Tiêu chí đánh giá} & \textbf{Phương pháp đánh giá} & \textbf{Kết quả} \\
+\hline
+\endhead
+
+Device Service broadcast UDP và các thiết bị kết nối được tới Device Service & Kiểm tra File log \texttt{deviceInterface.txt} liệt kê các thiết bị đã kết nối & Đạt \\
+\hline
+
+Hiển thị dữ liệu màn hình theo thời gian thực & Tiến hành bơm và so sánh màn hình cây xăng thực và màn hình Client UI, kiểm tra hiển thị tương đồng & Đạt \\
+\hline
+
+Lưu Log\/SubLog vào cơ sở dữ liệu & Giá trị Log\/sublog giống với phiên đã bơm, được lưu trong cơ sở dữ liệu & Đạt \\
+\hline
+
+
+
+Cập nhật trạng thái Relay & Thử nhấn nút bật tắt relay tại giao diện, kiểm tra đèn báo relay và thử tiếp tục bơm khi relay tắt, thấy trạng thái relay trên giao diện và thực tế đồng bộ & Đạt \\
+\hline
+
+
+Hoạt động ổn định & Không gặp lỗi treo ứng dụng trong quá trình thử nghiệm nhiều thiết bị. Cho chạy liên tục trong nhiều tuần & Đạt \\
+\hline
+
+\caption{Bảng kết quả đánh giá kiểm thử hệ thống}
+\label{tab:evaluation-system}
+\end{longtable}
+
+
+
+
+
+\FloatBarrier
+
+\subsection{Kết luận chương}
+
+Chương này đã chỉ ra quy trình triển khai cụ thể cho các thành phần hệ thống, đồng thời trình bày quá trình đánh giá kết quả thực tế khi lắp đặt hệ thống tại hiện trường. Từ đó, liệt kê cụ thể các chức năng hệ thống đã đạt được.
+

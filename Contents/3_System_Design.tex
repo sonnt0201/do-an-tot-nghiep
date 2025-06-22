@@ -134,35 +134,8 @@ Thiết bị giao tiếp với phần mềm giải mã thông qua mạng LAN, s�
 
 \textbf{a.  Khối xử lý trung tâm}
 
- Yêu cầu lựa chọn:
-\begin{itemize}
-    \item Có 2 cổng giao tiếp SPI: mục đích để giao tiếp với khối chuyển đổi tín hiệu và với khối Ethernet. 
-    \item Bộ nhớ flash lớn hơn 220KB (chứa được 2 firmware, mỗi firm ~ 110kB)
-\end{itemize}
 
-Từ những yêu cầu trên , lựa chọn STM32F407VET6 là vi điều khiển xử lý trung tâm. Các tính năng nổi bật của STM32F407VET6:
-
-\begin{itemize}
-    \item Vi điều khiển sử dụng lõi ARM Cortex-M4 32-bit, tốc độ tối đa 168 MHz, tích hợp bộ xử lý dấu chấm động (FPU) và tập lệnh DSP, phù hợp cho các ứng dụng điều khiển và xử lý tín hiệu thời gian thực.
-    
-    \item Bộ nhớ Flash Main Memory 512 KB, được chia thành các sector như sau:  
-    
-    \begin{itemize}
-        \item Sector 0-3: mỗi sector 16 KB  
-        \item Sector 4: 64 KB  
-        \item Sector 5, 6 và 11: mỗi sector 128-KB  
-    \end{itemize}
-
-    \item Cho phép linh hoạt khi lưu nhiều firmware (ví dụ dual-bank firmware upgrade), hoặc phân vùng cho bootloader, data log, cấu hình...
-
-    \item Tích hợp 3 cổng SPI (SPI1, SPI2, SPI3), hỗ trợ chế độ master/slave, tốc độ tối đa đến 42 MHz (SPI1) và 21 MHz (SPI2/SPI3). Phù hợp cho các giao tiếp tốc độ cao như ADC ngoại vi và module Ethernet SPI.
-
-    \item Có tổng cộng 17 bộ Timer, gồm 12 timer 16-bit và 2 timer 32-bit. Hỗ trợ nhiều chế độ: PWM, encoder, input capture, output compare, rất hữu ích trong điều khiển động cơ, đo thời gian hoặc phát xung.
-
-    \item Hỗ trợ nhiều chuẩn giao tiếp ngoại vi: UART, I2C, USB OTG, CAN, SDIO, Ethernet MAC - thuận tiện cho mở rộng và kết nối các module chức năng khác.
-
-    \item Hoạt động với điện áp 1.8 V đến 3.6 V, hỗ trợ các chế độ tiết kiệm năng lượng như Sleep, Stop, và Standby - phù hợp cho ứng dụng nhúng có yêu cầu tiêu thụ điện thấp.
-\end{itemize}
+Từ những yêu cầu đã nêu ở Chương 2, lựa chọn STM32F407VET6 là vi điều khiển xử lý trung tâmSTM32F407VET6:
 
 
 \begin{figure}[!ht]
@@ -222,7 +195,7 @@ Tổng số chân cho khối đầu vào tín hiệu là 40 chân.
     \label{fig:hinh3.6}
 \end{figure}
 
-
+\FloatBarrier
 \textbf{Khối nguồn và Ethernet}
 
 Yêu cầu thiết kế: 
@@ -490,7 +463,7 @@ Phần mềm có một cơ chế IPC (InterProcess Communication) riêng để c
 \end{figure}
 
 \FloatBarrier
-\subsection{Tổng kết chương}
+\subsection{Kết luận chương}
 
 Trong chương này đã trình bày các khối chức năng của các thành phần hệ thống. Từ yêu cầu về chức năng đó, đưa ra thiết kế chi tiết bao gồm:
 

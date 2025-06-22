@@ -1,4 +1,25 @@
 % SUMMARY PART
 \section*{TÓM TẮT ĐỒ ÁN}
     \thispagestyle{empty}
-(Sẽ được bổ sung vào giai đoạn cuối của đồ án)
+
+Đồ án này đưa ra phương án thiết kế và triển khai một thiết bị đọc ghi màn hình cột bơm xăng dầu, phục vụ cho các cột bơm xăng dầu cũ không có chức năng xuất hóa đơn trên thị trường.
+
+Chức năng chính của thiết bị bao gồm:
+
+\begin{itemize}
+    \item Đọc và giải mã màn hình cây xăng theo thời gian thực 
+    \item Phát hiện các phiên bơm hoàn chỉnh và lưu vào cơ sở dữ liệu. Làm tiền đề cho việc xuất hóa đơn điện tử sau này.
+\end{itemize}
+
+Thiết bị giải mã cụ thể một loại cột bơm là cột hãng ZCheng với dữ liệu màn hình theo giao thức SPI. Thiết bị được lắp đặt trực tiếp vào cột bơm, có phần mềm giải mã, cơ sở dữ liệu và giao diện người dùng đi kèm.
+
+Các công cụ chính được sử dụng bao gồm:
+
+\begin{itemize}
+    \item Mạch cứng: STM32f407vet6, Chip W5500, nguồn POE Switch, các bộ đệm tín hiệu và cách ly quang
+    \item Phần mềm giải mã: Ngôn ngữ C++, Win32 API, thư viện Boost (C++)
+    \item Lưu trữ: SQLite database.
+    \item Giao diện người dùng: Nền tảng NodeJS, ngôn ngữ TypeScript, thư viện sử dụng bao gồm Electron, ReactJS.
+\end{itemize}
+
+Kết quả thực nghiệm đã cho thấy hệ thống chạy ổn định trong thời gian dài và đáp ứng đủ các chức năng cơ bản đã đề ra. Hệ thống cũng đưa ra kiến trúc mở để dễ dàng mở rộng, thêm chức năng và thuận tiện cho giải mã các loại màn hình khác về sau. 

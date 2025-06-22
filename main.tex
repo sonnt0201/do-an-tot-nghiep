@@ -31,6 +31,7 @@
 \usepackage{subcaption}
 \usepackage{enumitem}
 \usepackage{placeins}
+\usepackage{array}
 
 % use svg
 \usepackage{svg}
@@ -38,6 +39,7 @@
 % Set global spacing for itemize
 \setlist[itemize]{itemsep=2pt, topsep=3pt, left=1cm}
 \linespread{1.15}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 \nocite{*}
 
@@ -79,17 +81,17 @@
 \newpage
 
 %%%%%%%%%%%% Using for lab report version %%%%%%%%%%%%
-\input{General/Edit_note}
-\thispagestyle{empty}
-\newpage
+% \input{General/Edit_note}
+% \thispagestyle{empty}
+% \newpage
 
-\input{General/Implementation_plan}
-\thispagestyle{empty}
-\newpage
+% \input{General/Implementation_plan}
+% \thispagestyle{empty}
+% \newpage
 
-\input{General/Meeting_notes}
-\thispagestyle{empty}
-\newpage
+% \input{General/Meeting_notes}
+% \thispagestyle{empty}
+% \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
