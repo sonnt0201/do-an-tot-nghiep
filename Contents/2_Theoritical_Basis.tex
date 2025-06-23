@@ -19,13 +19,13 @@ Cột bơm đầu tiên được phát minh vào năm 1885 bởi Sylvanus Bowser
 
 Vào những năm 1920-1930, các công ty như Tokheim, Wayne và Gilbarco đã bắt đầu phát triển các trạm bơm hiện đại hơn, với bơm điện thay thế hệ thống tay quay. Bên cạnh đó, thiết kế cột bơm cũng bắt đầu được cải tiến để đảm bảo an toàn, chẳng hạn như sử dụng van ngắt tự động và ống bơm linh hoạt hơn nhằm tránh cháy nổ.
 
-Sau Thế chiến II, đặc biệt từ những năm 1950 trở đi, cột bơm chuyển dần sang dạng thiết bị tự động hoá, có tích hợp đồng hồ đo cơ học, công tơ mét và bảng hiển thị giá thành. Tới những năm 1980, công nghệ vi xử lý bắt đầu được tích hợp, cho phép cột bơm giao tiếp với hệ thống thanh toán, quản lý tồn kho và giám sát từ xa.
+Sau Thế chiến II, đặc biệt từ những năm 1950 trở đi, cột bơm chuyển dần sang dạng thiết bị tự động hoá, có tích hợp đồng hồ đo cơ học, công tơ mét và bảng hiển thị giá thành. Ngày nay, công nghệ vi xử lý được tích hợp, cho phép cột bơm giao tiếp với hệ thống thanh toán, quản lý tồn kho và giám sát từ xa.
 
 Ngày nay, các cột bơm xăng dầu hiện đại không chỉ đảm bảo độ chính xác trong việc đo lường và phân phối nhiên liệu, mà còn được tích hợp các tính năng kỹ thuật số như: màn hình cảm ứng, thanh toán không tiếp xúc (contactless), nhận diện phương tiện tự động, kết nối internet để cập nhật giá xăng theo thời gian thực và thậm chí cung cấp quảng cáo trực tiếp trên màn hình bơm.
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\linewidth]{Figures/Chap2_typical-gas-pump-mechanism.jpg}
+    \includegraphics[width=0.6\linewidth]{Figures/Chap2_typical-gas-pump-mechanism.jpg}
     \caption{Nguyên lý hoạt động các cột bơm xăng dầu phổ biến}
     \label{fig:Chap2_typical-gas-pump-mechanism}
 \end{figure}
@@ -60,9 +60,9 @@ Màn hình sẽ có 3 hàng hiển thị giá trị tương ứng với cho 3 th
 
 \subsection{Cơ sở lý thuyết}
 
-\subsubsection{LED 7 thanh} \cite{luong2020dientuso}
+\subsubsection{LED 7 thanh} 
 
-LED 7 thanh (Seven-segment display) là một loại linh kiện hiển thị phổ biến dùng để hiển thị các chữ số thập phân (0–9) và một số ký tự chữ cái nhất định. Thiết bị này bao gồm 7 đoạn LED riêng biệt (ký hiệu là a, b, c, d, e, f, g), được sắp xếp theo hình dạng số 8. Mỗi đoạn là một LED nhỏ có thể phát sáng riêng biệt, cho phép tổ hợp thành các chữ số bằng cách điều khiển bật/tắt từng đoạn.
+LED 7 thanh\cite{luong2020dientuso} (Seven-segment display) là một loại linh kiện hiển thị phổ biến dùng để hiển thị các chữ số thập phân (0–9) và một số ký tự chữ cái nhất định. Thiết bị này bao gồm 7 đoạn LED riêng biệt (ký hiệu là a, b, c, d, e, f, g), được sắp xếp theo hình dạng số 8. Mỗi đoạn là một LED nhỏ có thể phát sáng riêng biệt, cho phép tổ hợp thành các chữ số bằng cách điều khiển bật/tắt từng đoạn.
 
 
 
@@ -107,9 +107,9 @@ LED 7 thanh (Seven-segment display) là một loại linh kiện hiển thị ph
 Việc điều khiển LED 7 thanh có thể thực hiện thông qua vi điều khiển bằng cách xuất tín hiệu logic ra từng chân tương ứng. Ngoài ra, có thể sử dụng IC giải mã như 74LS47 hoặc 74HC595 để giảm số chân điều khiển và đơn giản hóa mạch.
 
 
-\subsubsection{Giao thức SPI}
+\subsubsection{Giao thức SPI }
 
-Giao thức \textbf{SPI (Serial Peripheral Interface)} là một giao thức truyền thông nối tiếp đồng bộ do hãng Motorola đề xuất vào cuối thập niên 1980. SPI cho phép truyền dữ liệu tốc độ cao giữa vi điều khiển và các thiết bị ngoại vi như cảm biến, bộ nhớ Flash, DAC, ADC, màn hình LCD, v.v.
+Giao thức \textbf{SPI\cite{st_rm_f4} (Serial Peripheral Interface) } là một giao thức truyền thông nối tiếp đồng bộ do hãng Motorola đề xuất vào cuối thập niên 1980. SPI cho phép truyền dữ liệu tốc độ cao giữa vi điều khiển và các thiết bị ngoại vi như cảm biến, bộ nhớ Flash, DAC, ADC, màn hình LCD, v.v.
 
 \textbf{1. Kiến trúc tổng quát}
 
@@ -163,7 +163,7 @@ SPI là một trong những giao thức truyền thông có dây phổ biến nh
 \FloatBarrier
 \subsubsection{Mạng LAN}
 
-\textbf{LAN (Local Area Network)} là mạng máy tính cục bộ, cho phép nhiều thiết bị trong một khu vực địa lý nhỏ (như một tòa nhà, văn phòng hoặc nhà máy) kết nối và chia sẻ tài nguyên với nhau, chẳng hạn như dữ liệu, thiết bị ngoại vi, hoặc truy cập Internet.
+\textbf{LAN (Local Area Network)\cite{cloudflare_lan}} là mạng máy tính cục bộ, cho phép nhiều thiết bị trong một khu vực địa lý nhỏ (như một tòa nhà, văn phòng hoặc nhà máy) kết nối và chia sẻ tài nguyên với nhau, chẳng hạn như dữ liệu, thiết bị ngoại vi, hoặc truy cập Internet.
 
 \textbf{1. Kiến trúc cơ bản}
 
@@ -222,7 +222,7 @@ Mạng LAN là nền tảng kết nối thiết bị trong hệ thống điện 
 
 \subsection{Kiến trúc giao thức TCP/IP}
 
-Giao thức TCP/IP (Transmission Control Protocol/Internet Protocol) là nền tảng của mạng Internet và hầu hết các mạng máy tính hiện đại. Đây là một bộ giao thức gồm nhiều lớp, được thiết kế để đảm bảo việc truyền dữ liệu giữa các thiết bị trong môi trường mạng không đồng nhất. Kiến trúc TCP/IP được phát triển bởi Bộ Quốc phòng Hoa Kỳ vào những năm 1970 và dần trở thành chuẩn thực tế trong lĩnh vực truyền thông mạng.
+Giao thức TCP/IP\cite{hoang_mangtruyenthongcongnghiep} (Transmission Control Protocol/Internet Protocol) là nền tảng của mạng Internet và hầu hết các mạng máy tính hiện đại. Đây là một bộ giao thức gồm nhiều lớp, được thiết kế để đảm bảo việc truyền dữ liệu giữa các thiết bị trong môi trường mạng không đồng nhất. Kiến trúc TCP/IP được phát triển bởi Bộ Quốc phòng Hoa Kỳ vào những năm 1970 và dần trở thành chuẩn thực tế trong lĩnh vực truyền thông mạng.
 
 \begin{figure}[H]
     \centering
@@ -278,7 +278,7 @@ Mô hình TCP/IP đơn giản hơn OSI và được áp dụng rộng rãi trong
 
 \subsubsection{Giao thức TCP}
 
-TCP (Transmission Control Protocol) là một giao thức lớp giao vận trong bộ giao thức TCP/IP, được thiết kế để cung cấp dịch vụ truyền dữ liệu tin cậy giữa các thiết bị đầu cuối trong mạng. Khác với UDP, TCP đảm bảo rằng dữ liệu đến đúng thứ tự, không bị mất mát, trùng lặp hoặc hư hỏng thông qua các cơ chế kiểm soát lỗi và điều khiển luồng.
+TCP\cite{rfc9293} (Transmission Control Protocol) là một giao thức lớp giao vận trong bộ giao thức TCP/IP, được thiết kế để cung cấp dịch vụ truyền dữ liệu tin cậy giữa các thiết bị đầu cuối trong mạng. Khác với UDP, TCP đảm bảo rằng dữ liệu đến đúng thứ tự, không bị mất mát, trùng lặp hoặc hư hỏng thông qua các cơ chế kiểm soát lỗi và điều khiển luồng.
 
 \textbf{Đặc điểm chính của TCP:}
 \begin{itemize}
@@ -327,7 +327,7 @@ TCP tuy có độ trễ cao hơn UDP nhưng đổi lại cung cấp một kênh 
 \FloatBarrier
 \subsubsection{Giao thức UDP}
 
-UDP (User Datagram Protocol) là một giao thức ở tầng giao vận trong bộ giao thức TCP/IP, cung cấp phương thức truyền dữ liệu đơn giản, không kết nối (connectionless) và không đảm bảo độ tin cậy. UDP được sử dụng trong các ứng dụng yêu cầu tốc độ cao, truyền dữ liệu thời gian thực hoặc có cơ chế kiểm soát lỗi riêng tại tầng ứng dụng.
+UDP\cite{rfc768} (User Datagram Protocol) là một giao thức ở tầng giao vận trong bộ giao thức TCP/IP, cung cấp phương thức truyền dữ liệu đơn giản, không kết nối (connectionless) và không đảm bảo độ tin cậy. UDP được sử dụng trong các ứng dụng yêu cầu tốc độ cao, truyền dữ liệu thời gian thực hoặc có cơ chế kiểm soát lỗi riêng tại tầng ứng dụng.
 
 \textbf{Đặc điểm chính của UDP:}
 \begin{itemize}
@@ -377,7 +377,7 @@ Mặc dù không đảm bảo độ tin cậy như TCP, nhưng UDP là lựa ch�
 
 \subsubsection{Vi điều khiển STM32}
 
-STM32 là dòng vi điều khiển 32-bit do hãng STMicroelectronics phát triển, dựa trên kiến trúc ARM Cortex-M. Dòng STM32 rất phổ biến trong các ứng dụng nhúng (embedded systems) nhờ vào hiệu năng cao, mức tiêu thụ điện năng thấp, tích hợp nhiều ngoại vi và hỗ trợ phần mềm mạnh mẽ.
+STM32\cite{st_rm_f4} là dòng vi điều khiển 32-bit do hãng STMicroelectronics phát triển, dựa trên kiến trúc ARM Cortex-M. Dòng STM32 rất phổ biến trong các ứng dụng nhúng (embedded systems) nhờ vào hiệu năng cao, mức tiêu thụ điện năng thấp, tích hợp nhiều ngoại vi và hỗ trợ phần mềm mạnh mẽ.
 
 \textbf{Các đặc điểm nổi bật của STM32:}
 \begin{itemize}
@@ -415,7 +415,7 @@ STM32 là một nền tảng lý tưởng cho các ứng dụng nhúng nhờ kh�
 
 Ngôn ngữ lập trình C và C++ là hai ngôn ngữ phổ biến trong phát triển hệ thống nhúng và lập trình điều khiển phần cứng. Chúng cung cấp khả năng kiểm soát trực tiếp bộ nhớ, hiệu năng cao và tương thích tốt với các tài nguyên phần cứng, điều này làm cho chúng trở thành lựa chọn hàng đầu trong các ứng dụng thời gian thực như lập trình vi điều khiển STM32.
 
-\textbf{Ngôn ngữ C:}
+\textbf{Ngôn ngữ C}
 \begin{itemize}
     \item Là ngôn ngữ lập trình thủ tục, đơn giản, dễ hiểu, và rất phù hợp với việc lập trình cấp thấp.
     \item Cho phép truy cập trực tiếp đến bộ nhớ thông qua con trỏ.
@@ -423,7 +423,7 @@ Ngôn ngữ lập trình C và C++ là hai ngôn ngữ phổ biến trong phát 
     \item Là ngôn ngữ chính được sử dụng trong các trình biên dịch và thư viện hỗ trợ cho STM32 như STM32Cube HAL, CMSIS.
 \end{itemize}
 
-\textbf{Ngôn ngữ C++:}
+\textbf{Ngôn ngữ C++}
 \begin{itemize}
     \item Là phần mở rộng của C, hỗ trợ lập trình hướng đối tượng, giúp tổ chức mã nguồn tốt hơn, dễ bảo trì và mở rộng.
     \item Cung cấp tính năng kế thừa, đa hình và đóng gói, rất hữu ích trong phát triển phần mềm phức tạp hoặc quy mô lớn.
@@ -444,7 +444,7 @@ C/C++ là công cụ chính để lập trình firmware cho vi điều khiển, 
 
 \subsubsection{Môi trường phát triển phần mềm NodeJS}
 
-Node.js là một môi trường chạy mã JavaScript phía máy chủ, được xây dựng trên nền tảng V8 JavaScript Engine của Google. Không giống như JavaScript truyền thống vốn chỉ chạy trên trình duyệt, Node.js cho phép thực thi mã JavaScript trong môi trường máy chủ (server-side), hỗ trợ xây dựng các ứng dụng mạng có hiệu năng cao như web server, API, công cụ dòng lệnh và hệ thống xử lý thời gian thực.
+Node.js\cite{nodejs_docs} là một môi trường chạy mã JavaScript phía máy chủ, được xây dựng trên nền tảng V8 JavaScript Engine của Google. Không giống như JavaScript truyền thống vốn chỉ chạy trên trình duyệt, Node.js cho phép thực thi mã JavaScript trong môi trường máy chủ (server-side), hỗ trợ xây dựng các ứng dụng mạng có hiệu năng cao như web server, API, công cụ dòng lệnh và hệ thống xử lý thời gian thực.
 
 \textbf{Đặc điểm nổi bật của Node.js:}
 \begin{itemize}
@@ -495,11 +495,11 @@ Chip Ethernet cần đáp ứng nhu cầu sau:
 \end{itemize}
 
 
-\begin{longtable}{|>{\raggedright\arraybackslash}p{2cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{2.5cm}|}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{1.5cm}|>{\raggedright\arraybackslash}p{2.7cm}|>{\raggedright\arraybackslash}p{2.7cm}|>{\raggedright\arraybackslash}p{2.7cm}|>{\raggedright\arraybackslash}p{2.7cm}|}
 
 \caption{So sánh các chip Ethernet phổ biến} \\
 \hline
-\textbf{Tiêu chí} & \textbf{W5500} & \textbf{ENC28J60} & \textbf{W5100S} & \textbf{LAN8720A} \\
+\textbf{Tiêu chí} & \textbf{W5500}\cite{wiznet_w5500} & \textbf{ENC28J60}\cite{ENC28J60_Data_Sheet} & \textbf{W5100S}\cite{wiznet_W5100S} & \textbf{LAN8720A\cite{LAN8720A_Data_Sheet}} \\
 \hline
 \endfirsthead
 
@@ -529,8 +529,8 @@ Không tích hợp TCP/IP stack, chỉ là PHY \\
 \hline
 
 \textbf{Tốc độ truyền dữ liệu} & 
-SPI 80 MHz, hiệu năng ổn định (~8 Mbps TCP) & 
-SPI 20 MHz, hiệu năng thấp (~3-4 Mbps TCP) & 
+SPI 80 MHz, hiệu năng ổn định & 
+SPI 25 MHz (10 Mbps), hiệu năng thấp  & 
 SPI 70 MHz, cải tiến từ W5100 & 
 10/100 Mbps (phụ thuộc MAC của MCU) \\ 
 \hline
@@ -558,7 +558,7 @@ Thường dùng với vi điều khiển có MAC riêng (ESP32, STM32F4+) \\
 
 \end{longtable}
 
-Từ bảng liệt kê trên, chọn chip W5500 là chip Ethernet cho mạch phần cứng Thiết bị đọc ghi màn hình cây xăng.
+Từ bảng liệt kê trên, chọn chip \textbf{W5500} là chip Ethernet cho mạch phần cứng Thiết bị đọc ghi màn hình cây xăng.
 
 \begin{figure}[!ht]
     \centering
@@ -577,7 +577,7 @@ Yêu cầu lựa chọn:
     \item Nhanh và ổn định, dễ dàng mở rộng
 \end{itemize}
 
-Từ những yêu cầu trên , lựa chọn STM32F407VET6 là vi điều khiển xử lý trung tâm. Các tính năng nổi bật của STM32F407VET6:
+Từ những yêu cầu trên , lựa chọn \textbf{STM32F407VET6} là vi điều khiển xử lý trung tâm. Các tính năng nổi bật của STM32F407VET6:
 
 \begin{itemize}
     \item Vi điều khiển sử dụng lõi ARM Cortex-M4 32-bit, tốc độ tối đa 168 MHz, tích hợp bộ xử lý dấu chấm động (FPU) và tập lệnh DSP, phù hợp cho các ứng dụng điều khiển và xử lý tín hiệu thời gian thực.

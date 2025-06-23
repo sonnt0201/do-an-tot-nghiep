@@ -53,8 +53,7 @@ Mục tiêu là thiết kế thiết bị đọc ghi và giải mã màn hình c
     4. \quad Hỗ trợ điều khiển từ xa
  }
 
- Việc ghi dữ liệu cột bơm có thể được điều khiển bật tắt từ xa, thông qua giao diện phần mềm.
-
+ Điều khiển các relay bật tắt từ xa thông qua giao diện người dùng.
 
  \textbf{
     5. \quad Cập nhật phần mềm từ xa (OTA)
@@ -121,6 +120,7 @@ Thiết bị đọc màn hình cây xăng có 2 relay đóng ngắt có thể n�
     \caption{Màn hình và mạch phần cứng màn hình cây xăng hãng ZCheng}
     \label{fig:hinh1.1}
 \end{figure}
+\FloatBarrier
 
 Do đó, cần khảo sát tín hiệu màn hình. Sử dụng mạch thu và phần mềm của Logic Analyzer để thu tín hiệu theo các bước sau:
 
@@ -138,8 +138,23 @@ Do đó, cần khảo sát tín hiệu màn hình. Sử dụng mạch thu và ph
    \item Ý nghĩa các byte trong gói tin
 \end{itemize}
 
-Từ đó, chế tạo mạch thu gói tin theo giao thức SPI và thiết kế phần mềm giải mã.
+Từ đó, chế tạo mạch thu gói tin theo giao thức SPI và thiết kế phần mềm giải mã. Hình \ref{fig:logic_analyzer_data_sample} là một mẫu tín hiệu màn hình thu được vào thời điểm màn hình hiển thị:
 
+\begin{itemize}
+   \item Sale: \texttt{4.88}
+   \item Litre: \texttt{16.37}
+   \item Price: \texttt{79.89}
+\end{itemize}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\linewidth]{Figures/logic_analyzer_data_sample.png}
+   
+    \caption{Một mẫu tín hiệu màn hình thu được sử dụng Logic Analyzer}
+    \label{fig:logic_analyzer_data_sample}
+\end{figure}
+
+\FloatBarrier
 \subsection{Cấu trúc đồ án}
 
 Nội dung được trình bày ở các chương tiếp theo bao gồm: 

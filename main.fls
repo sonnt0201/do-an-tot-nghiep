@@ -384,6 +384,15 @@ INPUT ./Figures/ZCheng_screen-control-ic.jpg
 INPUT ./Figures/ZCheng_screen-control-ic.jpg
 INPUT ./Figures/ZCheng_screen-control-ic.jpg
 INPUT ./Figures/ZCheng_screen-control-ic.jpg
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
+INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
+INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/tfm/vntex/vnr/vntt12.tfm
+INPUT ./Figures/logic_analyzer_data_sample.png
+INPUT ./Figures/logic_analyzer_data_sample.png
+INPUT ./Figures/logic_analyzer_data_sample.png
+INPUT ./Figures/logic_analyzer_data_sample.png
+INPUT ./Figures/logic_analyzer_data_sample.png
 INPUT ./Contents/2_Theoritical_Basis.tex
 INPUT ./Contents/2_Theoritical_Basis.tex
 INPUT ./Contents/2_Theoritical_Basis.tex
@@ -470,9 +479,6 @@ INPUT ./Figures/Chap3_STM32-principle.pdf
 INPUT ./Figures/Chap3_STM32-principle.pdf
 INPUT ./Figures/Chap3_STM32-principle.pdf
 INPUT ./Figures/Chap3_STM32-principle.pdf
-INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf
-INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm
-INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT ./Figures/Chap3_Input-signal-block-principle.pdf
 INPUT ./Figures/Chap3_Input-signal-block-principle.pdf
 INPUT ./Figures/Chap3_Input-signal-block-principle.pdf
@@ -518,10 +524,11 @@ INPUT ./Figures/DeviceService_implemetation-sequece-relay-control.png
 INPUT ./Figures/DeviceService_implemetation-sequece-relay-control.png
 INPUT ./Figures/DeviceService_implemetation-sequece-relay-control.png
 INPUT ./Figures/DeviceService_implemetation-sequece-relay-control.png
-INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
-INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
-INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
-INPUT ./Figures/Chap3_Device-firm-implementation-ota.png
+INPUT ./Figures/DeviceService_implementation-sequence-ota.png
+INPUT ./Figures/DeviceService_implementation-sequence-ota.png
+INPUT ./Figures/DeviceService_implementation-sequence-ota.png
+INPUT ./Figures/DeviceService_implementation-sequence-ota.png
+INPUT ./Figures/DeviceService_implementation-sequence-ota.png
 INPUT ./Figures/ClientUI_implementation-block.png
 INPUT ./Figures/ClientUI_implementation-block.png
 INPUT ./Figures/ClientUI_implementation-block.png
@@ -573,10 +580,6 @@ INPUT ./Figures/Device_stm32-io-config.png
 INPUT ./Figures/Device_stm32-io-config.png
 INPUT ./Figures/Device_stm32-io-config.png
 INPUT ./Figures/Device_stm32-io-config.png
-INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
-INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
-INPUT d:/Program Files/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
-INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/tfm/vntex/vnr/vntt12.tfm
 INPUT ./Figures/flowcharts-Device_Receive-screen-frame.png
 INPUT ./Figures/flowcharts-Device_Receive-screen-frame.png
 INPUT ./Figures/flowcharts-Device_Receive-screen-frame.png
@@ -659,11 +662,19 @@ INPUT Contents/Conclusion.tex
 INPUT ./main.bbl
 INPUT ./main.bbl
 INPUT main.bbl
+INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/tfm/adobe/times/ptmri8c.tfm
+INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/vf/adobe/times/ptmri8c.vf
+INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT ./Contents/Appendix.tex
 INPUT ./Contents/Appendix.tex
 INPUT ./Contents/Appendix.tex
 INPUT ./Contents/Appendix.tex
 INPUT Contents/Appendix.tex
+INPUT ./Figures/Logic-analyzer-download-page.png
+INPUT ./Figures/Logic-analyzer-download-page.png
+INPUT ./Figures/Logic-analyzer-download-page.png
+INPUT ./Figures/Logic-analyzer-download-page.png
+INPUT ./Figures/Logic-analyzer-download-page.png
 INPUT main.aux
 INPUT ./Contents/4_Simulation_results.aux
 INPUT ./Contents/4_Simulation_results.aux
@@ -671,10 +682,10 @@ INPUT Contents/4_Simulation_results.aux
 INPUT ./main.out
 INPUT ./main.out
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagb.pfb
-INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/symbol/usyr.pfb
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb
+INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb
 INPUT d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb

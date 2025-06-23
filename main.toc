@@ -7,57 +7,66 @@
 \contentsline {subsection}{\numberline {1.2}Khái quát về yêu cầu và chức năng của hệ thống}{1}{subsection.7}%
 \contentsline {subsection}{\numberline {1.3}Phạm vi nghiên cứu}{2}{subsection.9}%
 \contentsline {subsection}{\numberline {1.4}Phương pháp nghiên cứu}{3}{subsection.10}%
-\contentsline {subsection}{\numberline {1.5}Cấu trúc đồ án}{4}{subsection.12}%
-\contentsline {subsection}{\numberline {1.6}Kết luận chương}{4}{subsection.13}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 2. TỔNG QUAN LÝ THUYẾT VÀ CÔNG NGHỆ}{5}{subsection.13}%
-\contentsline {subsection}{\numberline {2.1}Tổng quan về chủ đề nghiên cứu}{5}{subsection.14}%
-\contentsline {subsubsection}{\numberline {2.1.1}Lịch sử phát triển cột bơm xăng dầu \cite {first-gas-pump-and-service-station}}{5}{subsubsection.15}%
-\contentsline {subsubsection}{\numberline {2.1.2}Màn hình cột bơm xăng dầu}{6}{subsubsection.17}%
-\contentsline {subsection}{\numberline {2.2}Cơ sở lý thuyết}{7}{subsection.19}%
-\contentsline {subsubsection}{\numberline {2.2.1}LED 7 thanh}{7}{subsubsection.20}%
-\contentsline {subsubsection}{\numberline {2.2.2}Giao thức SPI}{9}{subsubsection.23}%
-\contentsline {subsubsection}{\numberline {2.2.3}Mạng LAN}{10}{subsubsection.24}%
-\contentsline {subsection}{\numberline {2.3}Kiến trúc giao thức TCP/IP}{11}{subsection.26}%
-\contentsline {subsubsection}{\numberline {2.3.1}Giao thức TCP}{13}{subsubsection.33}%
-\contentsline {subsubsection}{\numberline {2.3.2}Giao thức UDP}{15}{subsubsection.39}%
-\contentsline {subsection}{\numberline {2.4}Các công nghệ liên quan}{16}{subsection.41}%
-\contentsline {subsubsection}{\numberline {2.4.1}Vi điều khiển STM32}{16}{subsubsection.42}%
-\contentsline {subsubsection}{\numberline {2.4.2}Ngôn ngữ lập trình C/C++}{17}{subsubsection.44}%
-\contentsline {subsubsection}{\numberline {2.4.3}Môi trường phát triển phần mềm NodeJS}{18}{subsubsection.45}%
-\contentsline {subsection}{\numberline {2.5}Lựa chọn công nghệ phù hợp}{19}{subsection.46}%
-\contentsline {subsubsection}{\numberline {2.5.1}Chip Ethernet để kết nối với mạng LAN}{19}{subsubsection.47}%
-\contentsline {subsubsection}{\numberline {2.5.2}Vi điều khiển trung tâm cho thiết bị đọc màn hình}{21}{subsubsection.49}%
-\contentsline {subsection}{\numberline {2.6}Kết luận chương}{22}{subsection.50}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 3. THIẾT KẾ HỆ THỐNG}{23}{subsection.50}%
-\contentsline {subsection}{\numberline {3.1}Phân tích yêu cầu hệ thống}{23}{subsection.51}%
-\contentsline {subsubsection}{\numberline {3.1.1}Thiết bị đọc ghi màn hình}{23}{subsubsection.53}%
-\contentsline {subsubsection}{\numberline {3.1.2}Phần mềm giải mã}{23}{subsubsection.54}%
-\contentsline {subsubsection}{\numberline {3.1.3}Hệ thống mạng}{24}{subsubsection.55}%
-\contentsline {subsection}{\numberline {3.2}Mô hình thiết kế tổng thể}{24}{subsection.56}%
-\contentsline {subsubsection}{\numberline {3.2.1}Sơ đồ khối chức năng thiết bị đọc ghi màn hình (Device)}{24}{subsubsection.57}%
-\contentsline {subsubsection}{\numberline {3.2.2}Sơ đồ khối chức năng phần mềm giải mã (Device Service)}{25}{subsubsection.59}%
-\contentsline {subsection}{\numberline {3.3}Thiết kế phần cứng thiết bị đọc màn hình}{26}{subsection.61}%
-\contentsline {subsubsection}{\numberline {3.3.1}Sơ đồ khối phần cứng thiết bị đọc màn hình}{26}{subsubsection.62}%
-\contentsline {subsubsection}{\numberline {3.3.2}Lựa chọn linh kiện và vẽ sơ đồ nguyên lý}{26}{subsubsection.64}%
-\contentsline {subsection}{\numberline {3.4}Thiết kế firmware thiết bị đọc màn hình}{30}{subsection.68}%
-\contentsline {subsubsection}{\numberline {3.4.1}Kiến trúc triển khai firmware}{30}{subsubsection.69}%
-\contentsline {subsubsection}{\numberline {3.4.2}Trình tự giao tiếp giữa các khối}{31}{subsubsection.71}%
-\contentsline {subsection}{\numberline {3.5}Thiết kế phần mềm giải mã Device Service}{33}{subsection.75}%
-\contentsline {subsubsection}{\numberline {3.5.1}Kiến trúc triển khai phần mềm}{33}{subsubsection.76}%
-\contentsline {subsubsection}{\numberline {3.5.2}Trình tự giao tiếp và thuật toán cho các khối}{34}{subsubsection.78}%
-\contentsline {subsection}{\numberline {3.6}Giao diện điều khiển cho người dùng}{38}{subsection.82}%
-\contentsline {subsection}{\numberline {3.7}Kết luận chương}{40}{subsection.85}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 4. TRIỂN KHAI VÀ THỬ NGHIỆM}{41}{subsection.85}%
-\contentsline {subsection}{\numberline {4.1}Quy trình triển khai}{41}{subsection.86}%
-\contentsline {subsubsection}{\numberline {4.1.1}Mạch phần cứng thiết bị đọc màn hình}{41}{subsubsection.87}%
-\contentsline {subsubsection}{\numberline {4.1.2}Firmware thiết bị đọc màn hình}{42}{subsubsection.92}%
-\contentsline {subsubsection}{\numberline {4.1.3}Phần mềm giải mã Device Service}{48}{subsubsection.98}%
-\contentsline {subsubsection}{\numberline {4.1.4}Viết phần mềm Client UI hiển thị các phiên bơm}{56}{subsubsection.107}%
-\contentsline {subsection}{\numberline {4.2}Thử nghiệm và đánh giá kết quả thực tế}{59}{subsection.111}%
-\contentsline {subsection}{\numberline {4.3}Kết luận chương}{62}{subsection.114}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 5. KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN}{63}{subsection.114}%
-\contentsline {subsection}{\numberline {5.1}Tóm tắt kết quả đã đạt được}{63}{subsection.115}%
-\contentsline {subsection}{\numberline {5.2}Những hạn chế còn tồn đọng}{63}{subsection.116}%
-\contentsline {subsection}{\numberline {5.3}Định hướng phát triển trong tương lai}{63}{subsection.117}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion TÀI LIỆU THAM KHẢO}{64}{section*.118}%
-\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion PHỤ LỤC}{65}{section*.119}%
+\contentsline {subsection}{\numberline {1.5}Cấu trúc đồ án}{4}{subsection.13}%
+\contentsline {subsection}{\numberline {1.6}Kết luận chương}{5}{subsection.14}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 2. TỔNG QUAN LÝ THUYẾT VÀ CÔNG NGHỆ}{6}{subsection.14}%
+\contentsline {subsection}{\numberline {2.1}Tổng quan về chủ đề nghiên cứu}{6}{subsection.15}%
+\contentsline {subsubsection}{\numberline {2.1.1}Lịch sử phát triển cột bơm xăng dầu \cite {first-gas-pump-and-service-station}}{6}{subsubsection.16}%
+\contentsline {subsubsection}{\numberline {2.1.2}Màn hình cột bơm xăng dầu}{7}{subsubsection.18}%
+\contentsline {subsection}{\numberline {2.2}Cơ sở lý thuyết}{8}{subsection.20}%
+\contentsline {subsubsection}{\numberline {2.2.1}LED 7 thanh}{8}{subsubsection.21}%
+\contentsline {subsubsection}{\numberline {2.2.2}Giao thức SPI }{9}{subsubsection.24}%
+\contentsline {subsubsection}{\numberline {2.2.3}Mạng LAN}{11}{subsubsection.25}%
+\contentsline {subsection}{\numberline {2.3}Kiến trúc giao thức TCP/IP}{12}{subsection.27}%
+\contentsline {subsubsection}{\numberline {2.3.1}Giao thức TCP}{13}{subsubsection.34}%
+\contentsline {subsubsection}{\numberline {2.3.2}Giao thức UDP}{15}{subsubsection.40}%
+\contentsline {subsection}{\numberline {2.4}Các công nghệ liên quan}{16}{subsection.42}%
+\contentsline {subsubsection}{\numberline {2.4.1}Vi điều khiển STM32}{16}{subsubsection.43}%
+\contentsline {subsubsection}{\numberline {2.4.2}Ngôn ngữ lập trình C/C++}{18}{subsubsection.45}%
+\contentsline {subsubsection}{\numberline {2.4.3}Môi trường phát triển phần mềm NodeJS}{18}{subsubsection.46}%
+\contentsline {subsection}{\numberline {2.5}Lựa chọn công nghệ phù hợp}{20}{subsection.47}%
+\contentsline {subsubsection}{\numberline {2.5.1}Chip Ethernet để kết nối với mạng LAN}{20}{subsubsection.48}%
+\contentsline {subsubsection}{\numberline {2.5.2}Vi điều khiển trung tâm cho thiết bị đọc màn hình}{21}{subsubsection.50}%
+\contentsline {subsection}{\numberline {2.6}Kết luận chương}{22}{subsection.51}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 3. THIẾT KẾ HỆ THỐNG}{23}{subsection.51}%
+\contentsline {subsection}{\numberline {3.1}Phân tích yêu cầu hệ thống}{23}{subsection.52}%
+\contentsline {subsubsection}{\numberline {3.1.1}Thiết bị đọc ghi màn hình}{23}{subsubsection.54}%
+\contentsline {subsubsection}{\numberline {3.1.2}Phần mềm giải mã}{23}{subsubsection.55}%
+\contentsline {subsubsection}{\numberline {3.1.3}Hệ thống mạng}{24}{subsubsection.56}%
+\contentsline {subsection}{\numberline {3.2}Mô hình thiết kế tổng thể}{24}{subsection.57}%
+\contentsline {subsubsection}{\numberline {3.2.1}Sơ đồ khối chức năng thiết bị đọc ghi màn hình (Device)}{24}{subsubsection.58}%
+\contentsline {subsubsection}{\numberline {3.2.2}Sơ đồ khối chức năng phần mềm giải mã (Device Service)}{25}{subsubsection.60}%
+\contentsline {subsection}{\numberline {3.3}Thiết kế phần cứng thiết bị đọc màn hình}{26}{subsection.62}%
+\contentsline {subsubsection}{\numberline {3.3.1}Sơ đồ khối phần cứng thiết bị đọc màn hình}{26}{subsubsection.63}%
+\contentsline {subsubsection}{\numberline {3.3.2}Lựa chọn linh kiện và vẽ sơ đồ nguyên lý}{26}{subsubsection.65}%
+\contentsline {subsection}{\numberline {3.4}Thiết kế firmware thiết bị đọc màn hình}{30}{subsection.69}%
+\contentsline {subsubsection}{\numberline {3.4.1}Kiến trúc triển khai firmware}{30}{subsubsection.70}%
+\contentsline {subsubsection}{\numberline {3.4.2}Trình tự giao tiếp giữa các khối}{31}{subsubsection.72}%
+\contentsline {subsection}{\numberline {3.5}Thiết kế phần mềm giải mã Device Service}{34}{subsection.76}%
+\contentsline {subsubsection}{\numberline {3.5.1}Kiến trúc triển khai phần mềm}{34}{subsubsection.77}%
+\contentsline {subsubsection}{\numberline {3.5.2}Trình tự giao tiếp và thuật toán cho các khối}{35}{subsubsection.79}%
+\contentsline {subsection}{\numberline {3.6}Giao diện điều khiển cho người dùng}{38}{subsection.83}%
+\contentsline {subsection}{\numberline {3.7}Kết luận chương}{39}{subsection.86}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 4. TRIỂN KHAI VÀ THỬ NGHIỆM}{40}{subsection.86}%
+\contentsline {subsection}{\numberline {4.1}Quy trình triển khai}{40}{subsection.87}%
+\contentsline {subsubsection}{\numberline {4.1.1}Mạch phần cứng thiết bị đọc màn hình}{40}{subsubsection.88}%
+\contentsline {subsubsection}{\numberline {4.1.2}Firmware thiết bị đọc màn hình}{41}{subsubsection.93}%
+\contentsline {subsubsection}{\numberline {4.1.3}Phần mềm giải mã Device Service}{47}{subsubsection.99}%
+\contentsline {subsubsection}{\numberline {4.1.4}Viết phần mềm Client UI hiển thị các phiên bơm}{55}{subsubsection.108}%
+\contentsline {subsection}{\numberline {4.2}Thử nghiệm và đánh giá kết quả thực tế}{58}{subsection.112}%
+\contentsline {subsection}{\numberline {4.3}Kết luận chương}{61}{subsection.115}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion CHƯƠNG 5. KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN}{62}{subsection.115}%
+\contentsline {subsection}{\numberline {5.1}Tóm tắt kết quả đã đạt được}{62}{subsection.116}%
+\contentsline {subsection}{\numberline {5.2}Những hạn chế còn tồn đọng}{62}{subsection.117}%
+\contentsline {subsection}{\numberline {5.3}Định hướng phát triển trong tương lai}{62}{subsection.118}%
+\contentsline {subsection}{\numberline {5.4}Kết luận chương}{62}{subsection.119}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion TÀI LIỆU THAM KHẢO}{63}{section*.120}%
+\contentsline {section}{\hbox to\@tempdima {\hfil }\leftprotrusion PHỤ LỤC}{64}{section*.121}%
+\contentsline {section}{\numberline {A}Các bước khảo sát tín hiệu và thu thập dữ liệu màn hình}{64}{appendix.122}%
+\contentsline {subsection}{\numberline {A.1}Các công cụ sử dụng}{64}{subsection.123}%
+\contentsline {subsection}{\numberline {A.2}Các bước khảo sát tín hiệu}{64}{subsection.125}%
+\contentsline {subsection}{\numberline {A.3}Kịch bản thao tác với cột bơm để thu thập dữ liệu}{65}{subsection.126}%
+\contentsline {subsubsection}{\numberline {A.3.1}Thu thập các phiên bơm}{66}{subsubsection.127}%
+\contentsline {subsubsection}{\numberline {A.3.2}Thu thập thông tin đơn giá}{66}{subsubsection.128}%
+\contentsline {subsubsection}{\numberline {A.3.3}Thu thập tín hiệu cho hiển thị tiền và preset tiền}{66}{subsubsection.129}%
+\contentsline {subsubsection}{\numberline {A.3.4}Thu thập tín hiệu cho hiển thị lit và preset lit}{68}{subsubsection.130}%

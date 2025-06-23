@@ -1,11 +1,11 @@
 \babel@toc {nil}{}\relax 
-\contentsline {table}{\numberline {2.1.}{\ignorespaces Bảng mã nhị phân điều khiển LED 7 thanh hiển thị chữ số (Common Cathode)}}{8}{table.caption.22}%
-\contentsline {table}{\numberline {2.2.}{\ignorespaces So sánh mô hình OSI và TCP/IP}}{13}{table.caption.32}%
-\contentsline {table}{\numberline {2.3.}{\ignorespaces So sánh các chip Ethernet phổ biến}}{19}{table.3}%
-\contentsline {table}{\numberline {4.1.}{\ignorespaces Cấu trúc gói tin giữa Device và Device Service}}{47}{table.caption.97}%
-\contentsline {table}{\numberline {4.2.}{\ignorespaces Danh sách các loại CMD trong enum Cmd\_t}}{48}{table.2}%
-\contentsline {table}{\numberline {4.3.}{\ignorespaces Các loại sự kiện màn hình}}{51}{table.caption.102}%
-\contentsline {table}{\numberline {4.4.}{\ignorespaces Mô tả các trạng thái máy (Machine State)}}{52}{table.caption.103}%
-\contentsline {table}{\numberline {4.5.}{\ignorespaces Callback được gọi sau khi xác định trạng thái mới}}{53}{table.5}%
-\contentsline {table}{\numberline {4.6.}{\ignorespaces Danh sách các message\_type của Device Service}}{55}{table.6}%
-\contentsline {table}{\numberline {4.7.}{\ignorespaces Bảng kết quả đánh giá kiểm thử hệ thống}}{61}{table.7}%
+\contentsline {table}{\numberline {2.1.}{\ignorespaces Bảng mã nhị phân điều khiển LED 7 thanh hiển thị chữ số (Common Cathode)}}{9}{table.caption.23}%
+\contentsline {table}{\numberline {2.2.}{\ignorespaces So sánh mô hình OSI và TCP/IP}}{13}{table.caption.33}%
+\contentsline {table}{\numberline {2.3.}{\ignorespaces So sánh các chip Ethernet phổ biến}}{20}{table.3}%
+\contentsline {table}{\numberline {4.1.}{\ignorespaces Cấu trúc gói tin giữa Device và Device Service}}{46}{table.caption.98}%
+\contentsline {table}{\numberline {4.2.}{\ignorespaces Danh sách các loại CMD trong enum Cmd\_t}}{47}{table.2}%
+\contentsline {table}{\numberline {4.3.}{\ignorespaces Các loại sự kiện màn hình}}{50}{table.caption.103}%
+\contentsline {table}{\numberline {4.4.}{\ignorespaces Mô tả các trạng thái máy (Machine State)}}{51}{table.caption.104}%
+\contentsline {table}{\numberline {4.5.}{\ignorespaces Callback được gọi sau khi xác định trạng thái mới}}{52}{table.5}%
+\contentsline {table}{\numberline {4.6.}{\ignorespaces Danh sách các message\_type của Device Service}}{54}{table.6}%
+\contentsline {table}{\numberline {4.7.}{\ignorespaces Bảng kết quả đánh giá kiểm thử hệ thống}}{60}{table.7}%

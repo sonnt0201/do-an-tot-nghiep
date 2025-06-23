@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.3)  22 JUN 2025 11:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.3)  23 JUN 2025 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -918,7 +918,7 @@ Package hyperref Info: Link coloring ON on input line 49.
 \openout4 = `main.out'.
 
  (./General/Cover_page.tex
-<logoBK.png, id=251, 69.25874pt x 112.16907pt>
+<logoBK.png, id=287, 69.25874pt x 112.16907pt>
 File: logoBK.png Graphic file (type png)
 <use logoBK.png>
 Package pdftex.def Info: logoBK.png  used on input line 11.
@@ -990,15 +990,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--47
 
 [4] (./General/Table_of_contents.tex (./main.toc
 
-[5])
+[5]
+
+[6])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 
 
-[6]
-
 [7]
+Overfull \hbox (17.86296pt too wide) in paragraph at lines 13--39
+[] 
+ []
+
+
 
 [1] (./main.lof
 
@@ -1015,7 +1020,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--47
 )
 
 [4] (./Contents/1_Introduction.tex
-<Figures/Chap1_proj-purpose.png, id=491, 977.616pt x 356.97pt>
+<Figures/Chap1_proj-purpose.png, id=541, 977.616pt x 356.97pt>
 File: Figures/Chap1_proj-purpose.png Graphic file (type png)
 <use Figures/Chap1_proj-purpose.png>
 Package pdftex.def Info: Figures/Chap1_proj-purpose.png  used on input line 26.
@@ -1025,96 +1030,106 @@ Package pdftex.def Info: Figures/Chap1_proj-purpose.png  used on input line 26.
 [1 <./Figures/Chap1_proj-purpose.png>]
 
 [2]
-<Figures/ZCheng_gas-pump-screen.jpg, id=502, 847.66687pt x 1668.2325pt>
+<Figures/ZCheng_gas-pump-screen.jpg, id=552, 847.66687pt x 1193.96063pt>
 File: Figures/ZCheng_gas-pump-screen.jpg Graphic file (type jpg)
 <use Figures/ZCheng_gas-pump-screen.jpg>
-Package pdftex.def Info: Figures/ZCheng_gas-pump-screen.jpg  used on input line 117.
-(pdftex.def)             Requested size: 176.4044pt x 347.15727pt.
-<Figures/ZCheng_screen-control-ic.jpg, id=503, 847.66687pt x 1446.90562pt>
+Package pdftex.def Info: Figures/ZCheng_gas-pump-screen.jpg  used on input line 116.
+(pdftex.def)             Requested size: 176.4044pt x 248.46184pt.
+<Figures/ZCheng_screen-control-ic.jpg, id=553, 847.66687pt x 1193.96063pt>
 File: Figures/ZCheng_screen-control-ic.jpg Graphic file (type jpg)
 <use Figures/ZCheng_screen-control-ic.jpg>
-Package pdftex.def Info: Figures/ZCheng_screen-control-ic.jpg  used on input line 119.
-(pdftex.def)             Requested size: 176.4044pt x 301.09941pt.
+Package pdftex.def Info: Figures/ZCheng_screen-control-ic.jpg  used on input line 118.
+(pdftex.def)             Requested size: 176.4044pt x 248.46184pt.
 
 
-[3])
+[3 <./Figures/ZCheng_gas-pump-screen.jpg> <./Figures/ZCheng_screen-control-ic.jpg>]
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 144.
+ (d:/Program Files/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
+File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+<Figures/logic_analyzer_data_sample.png, id=559, 894.9435pt x 257.16075pt>
+File: Figures/logic_analyzer_data_sample.png Graphic file (type png)
+<use Figures/logic_analyzer_data_sample.png>
+Package pdftex.def Info: Figures/logic_analyzer_data_sample.png  used on input line 151.
+(pdftex.def)             Requested size: 441.01775pt x 126.72401pt.
 
-[4 <./Figures/ZCheng_gas-pump-screen.jpg> <./Figures/ZCheng_screen-control-ic.jpg>] (./Contents/2_Theoritical_Basis.tex
+
+[4 <./Figures/logic_analyzer_data_sample.png>])
+
+[5] (./Contents/2_Theoritical_Basis.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@ifnextchar' on input line 12.
 
-<Figures/Chap2_typical-gas-pump-mechanism.jpg, id=514, 403.5075pt x 451.6875pt>
+<Figures/Chap2_typical-gas-pump-mechanism.jpg, id=571, 403.5075pt x 451.6875pt>
 File: Figures/Chap2_typical-gas-pump-mechanism.jpg Graphic file (type jpg)
 <use Figures/Chap2_typical-gas-pump-mechanism.jpg>
 Package pdftex.def Info: Figures/Chap2_typical-gas-pump-mechanism.jpg  used on input line 28.
-(pdftex.def)             Requested size: 352.81554pt x 394.943pt.
+(pdftex.def)             Requested size: 264.61333pt x 296.21242pt.
 
 
-[5]
+[6]
 File: Figures/ZCheng_gas-pump-screen.jpg Graphic file (type jpg)
 <use Figures/ZCheng_gas-pump-screen.jpg>
 Package pdftex.def Info: Figures/ZCheng_gas-pump-screen.jpg  used on input line 53.
-(pdftex.def)             Requested size: 198.45663pt x 390.5583pt.
+(pdftex.def)             Requested size: 198.45663pt x 279.52412pt.
 
 
-[6 <./Figures/Chap2_typical-gas-pump-mechanism.jpg>]
-<Figures/Chap2_7-seg-led.png, id=526, 451.6875pt x 241.65282pt>
+[7 <./Figures/Chap2_typical-gas-pump-mechanism.jpg>]
+<Figures/Chap2_7-seg-led.png, id=583, 451.6875pt x 241.65282pt>
 File: Figures/Chap2_7-seg-led.png Graphic file (type png)
 <use Figures/Chap2_7-seg-led.png>
 Package pdftex.def Info: Figures/Chap2_7-seg-led.png  used on input line 71.
 (pdftex.def)             Requested size: 352.81554pt x 188.76866pt.
 
 
-[7]
-
 [8 <./Figures/Chap2_7-seg-led.png>]
 
 [9]
-<Figures/Chap2_LAN-network.png, id=542, 978.65625pt x 641.39626pt>
+
+[10]
+<Figures/Chap2_LAN-network.png, id=602, 978.65625pt x 641.39626pt>
 File: Figures/Chap2_LAN-network.png Graphic file (type png)
 <use Figures/Chap2_LAN-network.png>
 Package pdftex.def Info: Figures/Chap2_LAN-network.png  used on input line 180.
 (pdftex.def)             Requested size: 352.81554pt x 231.23523pt.
 
 
-[10 <./Figures/Chap2_LAN-network.png>]
-<Figures/tcp_ip_model.png, id=547, 983.675pt x 737.75626pt>
+[11 <./Figures/Chap2_LAN-network.png>]
+<Figures/tcp_ip_model.png, id=609, 983.675pt x 737.75626pt>
 File: Figures/tcp_ip_model.png Graphic file (type png)
 <use Figures/tcp_ip_model.png>
 Package pdftex.def Info: Figures/tcp_ip_model.png  used on input line 229.
 (pdftex.def)             Requested size: 220.50887pt x 165.3801pt.
 
 
-[11]
-
 [12 <./Figures/tcp_ip_model.png>]
 
 [13]
-<Figures/tcp_handshake.jpg, id=567, 722.7pt x 542.025pt>
+<Figures/tcp_handshake.jpg, id=627, 722.7pt x 542.025pt>
 File: Figures/tcp_handshake.jpg Graphic file (type jpg)
 <use Figures/tcp_handshake.jpg>
 Package pdftex.def Info: Figures/tcp_handshake.jpg  used on input line 300.
 (pdftex.def)             Requested size: 264.61333pt x 198.4619pt.
-<Figures/TCP-packet-format.jpg, id=569, 602.25pt x 401.5pt>
+<Figures/TCP-packet-format.jpg, id=629, 602.25pt x 401.5pt>
 File: Figures/TCP-packet-format.jpg Graphic file (type jpg)
 <use Figures/TCP-packet-format.jpg>
 Package pdftex.def Info: Figures/TCP-packet-format.jpg  used on input line 309.
 (pdftex.def)             Requested size: 264.61333pt x 176.41548pt.
 
 
-[14 <./Figures/tcp_handshake.jpg> <./Figures/TCP-packet-format.jpg>]
-<Figures/udp-packet format.jpg, id=577, 1027.84pt x 578.16pt>
+[14 <./Figures/tcp_handshake.jpg>]
+<Figures/udp-packet format.jpg, id=640, 1027.84pt x 578.16pt>
 File: Figures/udp-packet format.jpg Graphic file (type jpg)
 <use Figures/udp-packet format.jpg>
 Package pdftex.def Info: Figures/udp-packet format.jpg  used on input line 344.
 (pdftex.def)             Requested size: 352.81554pt x 198.4597pt.
 
 
-[15 <./Figures/udp-packet format.jpg>]
+[15 <./Figures/TCP-packet-format.jpg>]
 
-[16]
-<Figures/stm32f407vet6-dev-kit.png, id=586, 602.25pt x 602.25pt>
+[16 <./Figures/udp-packet format.jpg>]
+<Figures/stm32f407vet6-dev-kit.png, id=651, 602.25pt x 602.25pt>
 File: Figures/stm32f407vet6-dev-kit.png Graphic file (type png)
 <use Figures/stm32f407vet6-dev-kit.png>
 Package pdftex.def Info: Figures/stm32f407vet6-dev-kit.png  used on input line 407.
@@ -1123,20 +1138,30 @@ Package pdftex.def Info: Figures/stm32f407vet6-dev-kit.png  used on input line 4
 
 [17 <./Figures/stm32f407vet6-dev-kit.png>]
 
-[18] [19]
-<Figures/module-ethernet-w5500.jpg, id=600, 451.6875pt x 451.6875pt>
+[18]
+
+[19]
+Overfull \hbox (3.1206pt too wide) in paragraph at lines 502--502
+[]|\T5/ptm/b/n/13 (-20) ENC28J60\T5/ptm/m/n/13 (-20) [[]]|  
+ []
+
+
+Overfull \hbox (6.23491pt too wide) in paragraph at lines 502--503
+[]|\T5/ptm/b/n/13 (-20) LAN8720A[[]]|  
+ []
+
+[20]
+<Figures/module-ethernet-w5500.jpg, id=680, 451.6875pt x 451.6875pt>
 File: Figures/module-ethernet-w5500.jpg Graphic file (type jpg)
 <use Figures/module-ethernet-w5500.jpg>
 Package pdftex.def Info: Figures/module-ethernet-w5500.jpg  used on input line 565.
 (pdftex.def)             Requested size: 352.81554pt x 352.83862pt.
 
 
-[20]
-
 [21 <./Figures/module-ethernet-w5500.jpg>])
 
 [22] (./Contents/3_System_Design.tex
-<Figures/Chap3_FunctionBlock-implementation.png, id=615, 914.982pt x 484.866pt>
+<Figures/Chap3_FunctionBlock-implementation.png, id=689, 914.982pt x 484.866pt>
 File: Figures/Chap3_FunctionBlock-implementation.png Graphic file (type png)
 <use Figures/Chap3_FunctionBlock-implementation.png>
 Package pdftex.def Info: Figures/Chap3_FunctionBlock-implementation.png  used on input line 17.
@@ -1144,7 +1169,7 @@ Package pdftex.def Info: Figures/Chap3_FunctionBlock-implementation.png  used on
 
 
 [23 <./Figures/Chap3_FunctionBlock-implementation.png>]
-<Figures/Chap3_Device-FunctionBlock.png, id=621, 1407.2575pt x 422.57875pt>
+<Figures/Chap3_Device-FunctionBlock.png, id=695, 1407.2575pt x 422.57875pt>
 File: Figures/Chap3_Device-FunctionBlock.png Graphic file (type png)
 <use Figures/Chap3_Device-FunctionBlock.png>
 Package pdftex.def Info: Figures/Chap3_Device-FunctionBlock.png  used on input line 70.
@@ -1152,7 +1177,7 @@ Package pdftex.def Info: Figures/Chap3_Device-FunctionBlock.png  used on input l
 
 
 [24 <./Figures/Chap3_Device-FunctionBlock.png>]
-<Figures/Chap3_DeviceService-function-block.png, id=627, 1076.02pt x 433.62pt>
+<Figures/Chap3_DeviceService-function-block.png, id=701, 1076.02pt x 433.62pt>
 File: Figures/Chap3_DeviceService-function-block.png Graphic file (type png)
 <use Figures/Chap3_DeviceService-function-block.png>
 Package pdftex.def Info: Figures/Chap3_DeviceService-function-block.png  used on input line 93.
@@ -1160,12 +1185,12 @@ Package pdftex.def Info: Figures/Chap3_DeviceService-function-block.png  used on
 
 
 [25 <./Figures/Chap3_DeviceService-function-block.png>]
-<Figures/Chap3_Device-Hardware-implementation-function-block.png, id=633, 897.3525pt x 463.7325pt>
+<Figures/Chap3_Device-Hardware-implementation-function-block.png, id=707, 897.3525pt x 463.7325pt>
 File: Figures/Chap3_Device-Hardware-implementation-function-block.png Graphic file (type png)
 <use Figures/Chap3_Device-Hardware-implementation-function-block.png>
 Package pdftex.def Info: Figures/Chap3_Device-Hardware-implementation-function-block.png  used on input line 122.
 (pdftex.def)             Requested size: 441.01775pt x 227.90312pt.
-<Figures/Chap3_STM32-principle.pdf, id=634, 794.97pt x 614.295pt>
+<Figures/Chap3_STM32-principle.pdf, id=708, 794.97pt x 614.295pt>
 File: Figures/Chap3_STM32-principle.pdf Graphic file (type pdf)
 <use Figures/Chap3_STM32-principle.pdf>
 Package pdftex.def Info: Figures/Chap3_STM32-principle.pdf  used on input line 143.
@@ -1175,360 +1200,389 @@ Package pdftex.def Info: Figures/Chap3_STM32-principle.pdf  used on input line 1
 [26 <./Figures/Chap3_Device-Hardware-implementation-function-block.png>]
 
 [27 <./Figures/Chap3_STM32-principle.pdf>]
-<Figures/Chap3_Input-signal-block-principle.pdf, id=663, 794.97pt x 614.295pt>
+<Figures/Chap3_Input-signal-block-principle.pdf, id=736, 794.97pt x 614.295pt>
 File: Figures/Chap3_Input-signal-block-principle.pdf Graphic file (type pdf)
 <use Figures/Chap3_Input-signal-block-principle.pdf>
-Package pdftex.def Info: Figures/Chap3_Input-signal-block-principle.pdf  used on input line 193.
+Package pdftex.def Info: Figures/Chap3_Input-signal-block-principle.pdf  used on input line 189.
 (pdftex.def)             Requested size: 441.01775pt x 340.79715pt.
 
 
 [28 <./Figures/Chap3_Input-signal-block-principle.pdf>]
-<Figures/Chap3_Power-and-Ethernet-block-principle.pdf, id=686, 794.97pt x 614.295pt>
+<Figures/Chap3_Power-and-Ethernet-block-principle.pdf, id=760, 794.97pt x 614.295pt>
 File: Figures/Chap3_Power-and-Ethernet-block-principle.pdf Graphic file (type pdf)
 <use Figures/Chap3_Power-and-Ethernet-block-principle.pdf>
-Package pdftex.def Info: Figures/Chap3_Power-and-Ethernet-block-principle.pdf  used on input line 227.
+Package pdftex.def Info: Figures/Chap3_Power-and-Ethernet-block-principle.pdf  used on input line 224.
 (pdftex.def)             Requested size: 441.01775pt x 340.79715pt.
 
 
 [29 <./Figures/Chap3_Power-and-Ethernet-block-principle.pdf>]
-<Figures/Chap3_Device-block-firmware-architecture.png, id=724, 1777.64125pt x 519.9425pt>
+<Figures/Chap3_Device-block-firmware-architecture.png, id=798, 1777.64125pt x 519.9425pt>
 File: Figures/Chap3_Device-block-firmware-architecture.png Graphic file (type png)
 <use Figures/Chap3_Device-block-firmware-architecture.png>
-Package pdftex.def Info: Figures/Chap3_Device-block-firmware-architecture.png  used on input line 254.
+Package pdftex.def Info: Figures/Chap3_Device-block-firmware-architecture.png  used on input line 251.
 (pdftex.def)             Requested size: 441.01775pt x 128.99359pt.
 
 
 [30 <./Figures/Chap3_Device-block-firmware-architecture.png>]
-<Figures/Chap3_Device-firm-implementation-handshake.png, id=733, 473.51906pt x 615.0478pt>
+<Figures/Chap3_Device-firm-implementation-handshake.png, id=806, 473.51906pt x 615.0478pt>
 File: Figures/Chap3_Device-firm-implementation-handshake.png Graphic file (type png)
 <use Figures/Chap3_Device-firm-implementation-handshake.png>
-Package pdftex.def Info: Figures/Chap3_Device-firm-implementation-handshake.png  used on input line 281.
+Package pdftex.def Info: Figures/Chap3_Device-firm-implementation-handshake.png  used on input line 278.
 (pdftex.def)             Requested size: 352.81554pt x 458.28157pt.
-
-
-[31 <./Figures/Chap3_Device-firm-implementation-handshake.png>]
-<Figures/Chap3_Device_firmware-implemetation-stream-screen.png, id=739, 947.54pt x 1181.41376pt>
+<Figures/Chap3_Device_firmware-implemetation-stream-screen.png, id=807, 947.54pt x 1181.41376pt>
 File: Figures/Chap3_Device_firmware-implemetation-stream-screen.png Graphic file (type png)
 <use Figures/Chap3_Device_firmware-implemetation-stream-screen.png>
-Package pdftex.def Info: Figures/Chap3_Device_firmware-implemetation-stream-screen.png  used on input line 294.
+Package pdftex.def Info: Figures/Chap3_Device_firmware-implemetation-stream-screen.png  used on input line 291.
 (pdftex.def)             Requested size: 441.01775pt x 549.85648pt.
 
 
+[31 <./Figures/Chap3_Device-firm-implementation-handshake.png>]
+
 [32 <./Figures/Chap3_Device_firmware-implemetation-stream-screen.png>]
-<Figures/Chap3_Device-firm-implementation-ota.png, id=746, 987.69pt x 1181.41376pt>
+<Figures/Chap3_Device-firm-implementation-ota.png, id=819, 987.69pt x 1181.41376pt>
 File: Figures/Chap3_Device-firm-implementation-ota.png Graphic file (type png)
 <use Figures/Chap3_Device-firm-implementation-ota.png>
-Package pdftex.def Info: Figures/Chap3_Device-firm-implementation-ota.png  used on input line 311.
+Package pdftex.def Info: Figures/Chap3_Device-firm-implementation-ota.png  used on input line 308.
 (pdftex.def)             Requested size: 441.01775pt x 527.50311pt.
-<Figures/DeviceService_implementation-block.png, id=747, 1237.62375pt x 774.895pt>
+
+
+[33 <./Figures/Chap3_Device-firm-implementation-ota.png>]
+<Figures/DeviceService_implementation-block.png, id=825, 1237.62375pt x 774.895pt>
 File: Figures/DeviceService_implementation-block.png Graphic file (type png)
 <use Figures/DeviceService_implementation-block.png>
-Package pdftex.def Info: Figures/DeviceService_implementation-block.png  used on input line 328.
+Package pdftex.def Info: Figures/DeviceService_implementation-block.png  used on input line 325.
 (pdftex.def)             Requested size: 441.01775pt x 276.12424pt.
 
 
-[33]
-
-[34 <./Figures/Chap3_Device-firm-implementation-ota.png>]
-<Figures/DeviceService_implementation-sequence-stream-screens.png, id=758, 1186.4325pt x 1265.47781pt>
+[34 <./Figures/DeviceService_implementation-block.png>]
+<Figures/DeviceService_implementation-sequence-stream-screens.png, id=832, 1186.4325pt x 1265.47781pt>
 File: Figures/DeviceService_implementation-sequence-stream-screens.png Graphic file (type png)
 <use Figures/DeviceService_implementation-sequence-stream-screens.png>
-Package pdftex.def Info: Figures/DeviceService_implementation-sequence-stream-screens.png  used on input line 366.
+Package pdftex.def Info: Figures/DeviceService_implementation-sequence-stream-screens.png  used on input line 363.
 (pdftex.def)             Requested size: 441.01775pt x 470.40144pt.
-<Figures/DeviceService_implemetation-sequece-relay-control.png, id=759, 740.7675pt x 464.4853pt>
+
+
+[35]
+<Figures/DeviceService_implemetation-sequece-relay-control.png, id=837, 740.7675pt x 464.4853pt>
 File: Figures/DeviceService_implemetation-sequece-relay-control.png Graphic file (type png)
 <use Figures/DeviceService_implemetation-sequece-relay-control.png>
-Package pdftex.def Info: Figures/DeviceService_implemetation-sequece-relay-control.png  used on input line 402.
+Package pdftex.def Info: Figures/DeviceService_implemetation-sequece-relay-control.png  used on input line 399.
 (pdftex.def)             Requested size: 352.81554pt x 221.22816pt.
 
 
-[35 <./Figures/DeviceService_implementation-block.png>]
-
 [36 <./Figures/DeviceService_implementation-sequence-stream-screens.png>]
+<Figures/DeviceService_implementation-sequence-ota.png, id=843, 740.7675pt x 637.63219pt>
+File: Figures/DeviceService_implementation-sequence-ota.png Graphic file (type png)
+<use Figures/DeviceService_implementation-sequence-ota.png>
+Package pdftex.def Info: Figures/DeviceService_implementation-sequence-ota.png  used on input line 414.
+(pdftex.def)             Requested size: 352.81554pt x 303.69571pt.
 
-[37 <./Figures/DeviceService_implemetation-sequece-relay-control.png>]
-File: Figures/Chap3_Device-firm-implementation-ota.png Graphic file (type png)
-<use Figures/Chap3_Device-firm-implementation-ota.png>
-Package pdftex.def Info: Figures/Chap3_Device-firm-implementation-ota.png  used on input line 417.
-(pdftex.def)             Requested size: 352.81554pt x 422.0097pt.
-<Figures/ClientUI_implementation-block.png, id=775, 844.15375pt x 442.65375pt>
+
+[37 <./Figures/DeviceService_implemetation-sequece-relay-control.png> <./Figures/DeviceService_implementation-sequence-ota.png>]
+<Figures/ClientUI_implementation-block.png, id=850, 844.15375pt x 442.65375pt>
 File: Figures/ClientUI_implementation-block.png Graphic file (type png)
 <use Figures/ClientUI_implementation-block.png>
-Package pdftex.def Info: Figures/ClientUI_implementation-block.png  used on input line 438.
+Package pdftex.def Info: Figures/ClientUI_implementation-block.png  used on input line 435.
 (pdftex.def)             Requested size: 352.81554pt x 185.00821pt.
 
 
-[38
-
-]
-<Figures/Electron_IPC_mechanism.jpg, id=781, 246.87431pt x 119.53458pt>
+[38 <./Figures/ClientUI_implementation-block.png>]
+<Figures/Electron_IPC_mechanism.jpg, id=857, 246.87431pt x 119.53458pt>
 File: Figures/Electron_IPC_mechanism.jpg Graphic file (type jpg)
 <use Figures/Electron_IPC_mechanism.jpg>
-Package pdftex.def Info: Figures/Electron_IPC_mechanism.jpg  used on input line 460.
+Package pdftex.def Info: Figures/Electron_IPC_mechanism.jpg  used on input line 457.
 (pdftex.def)             Requested size: 352.81554pt x 170.85104pt.
+)
 
-
-[39 <./Figures/ClientUI_implementation-block.png>])
-
-[40 <./Figures/Electron_IPC_mechanism.jpg>]
+[39 <./Figures/Electron_IPC_mechanism.jpg>]
 \openout2 = `Contents/4_Simulation_results.aux'.
 
  (./Contents/4_Simulation_results.tex
-<Figures/PCB_top-down.png, id=791, 663.6795pt x 499.8675pt>
+<Figures/PCB_top-down.png, id=862, 663.6795pt x 499.8675pt>
 File: Figures/PCB_top-down.png Graphic file (type png)
 <use Figures/PCB_top-down.png>
 Package pdftex.def Info: Figures/PCB_top-down.png  used on input line 26.
 (pdftex.def)             Requested size: 352.81554pt x 265.737pt.
-<Figures/PCB_side-view.png, id=792, 902.1705pt x 390.258pt>
+<Figures/PCB_side-view.png, id=863, 902.1705pt x 390.258pt>
 File: Figures/PCB_side-view.png Graphic file (type png)
 <use Figures/PCB_side-view.png>
 Package pdftex.def Info: Figures/PCB_side-view.png  used on input line 34.
 (pdftex.def)             Requested size: 176.4044pt x 76.30544pt.
-<Figures/PCB_bottom-up.png, id=793, 641.9985pt x 493.845pt>
+<Figures/PCB_bottom-up.png, id=864, 641.9985pt x 493.845pt>
 File: Figures/PCB_bottom-up.png Graphic file (type png)
 <use Figures/PCB_bottom-up.png>
 Package pdftex.def Info: Figures/PCB_bottom-up.png  used on input line 36.
 (pdftex.def)             Requested size: 176.4044pt x 135.69098pt.
-<Figures/Device_product-top-down.jpg, id=794, 1284.8pt x 960.58875pt>
+<Figures/Device_product-top-down.jpg, id=865, 1284.8pt x 960.58875pt>
 File: Figures/Device_product-top-down.jpg Graphic file (type jpg)
 <use Figures/Device_product-top-down.jpg>
 Package pdftex.def Info: Figures/Device_product-top-down.jpg  used on input line 45.
 (pdftex.def)             Requested size: 352.81554pt x 263.77429pt.
 
 
-[41
+[40
 
  <./Figures/PCB_top-down.png> <./Figures/PCB_side-view.png> <./Figures/PCB_bottom-up.png>]
-<Figures/Device_product-bottom-view.jpg, id=802, 2569.6pt x 1922.18124pt>
+<Figures/Device_product-bottom-view.jpg, id=873, 2569.6pt x 1922.18124pt>
 File: Figures/Device_product-bottom-view.jpg Graphic file (type jpg)
 <use Figures/Device_product-bottom-view.jpg>
 Package pdftex.def Info: Figures/Device_product-bottom-view.jpg  used on input line 52.
 (pdftex.def)             Requested size: 198.45663pt x 148.43956pt.
-<Figures/Device_product-side-view.jpg, id=803, 1284.8pt x 960.58875pt>
+<Figures/Device_product-side-view.jpg, id=874, 1284.8pt x 960.58875pt>
 File: Figures/Device_product-side-view.jpg Graphic file (type jpg)
 <use Figures/Device_product-side-view.jpg>
 Package pdftex.def Info: Figures/Device_product-side-view.jpg  used on input line 54.
 (pdftex.def)             Requested size: 198.45663pt x 148.37671pt.
-<Figures/Device_stm32-io-config.png, id=804, 1019.007pt x 522.15076pt>
+<Figures/Device_stm32-io-config.png, id=875, 1019.007pt x 522.15076pt>
 File: Figures/Device_stm32-io-config.png Graphic file (type png)
 <use Figures/Device_stm32-io-config.png>
 Package pdftex.def Info: Figures/Device_stm32-io-config.png  used on input line 68.
 (pdftex.def)             Requested size: 441.01775pt x 225.97847pt.
 
 
-[42 <./Figures/Device_product-top-down.jpg> <./Figures/Device_product-bottom-view.jpg> <./Figures/Device_product-side-view.jpg>]
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 90.
- (d:/Program Files/texlive/2025/texmf-dist/tex/latex/vntex/t5cmtt.fd
-File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-<Figures/flowcharts-Device_Receive-screen-frame.png, id=809, 3066.45625pt x 3217.01875pt>
+[41 <./Figures/Device_product-top-down.jpg> <./Figures/Device_product-bottom-view.jpg> <./Figures/Device_product-side-view.jpg>]
+<Figures/flowcharts-Device_Receive-screen-frame.png, id=884, 3066.45625pt x 3217.01875pt>
 File: Figures/flowcharts-Device_Receive-screen-frame.png Graphic file (type png)
 <use Figures/flowcharts-Device_Receive-screen-frame.png>
-Package pdftex.def Info: Figures/flowcharts-Device_Receive-screen-frame.png  used on input line 104.
+Package pdftex.def Info: Figures/flowcharts-Device_Receive-screen-frame.png  used on input line 105.
 (pdftex.def)             Requested size: 441.01775pt x 462.65149pt.
-<Figures/flowcharts-Device_handle-DS-req.png, id=810, 3759.04375pt x 5124.14375pt>
+<Figures/flowcharts-Device_handle-DS-req.png, id=885, 3759.04375pt x 5124.14375pt>
 File: Figures/flowcharts-Device_handle-DS-req.png Graphic file (type png)
 <use Figures/flowcharts-Device_handle-DS-req.png>
-Package pdftex.def Info: Figures/flowcharts-Device_handle-DS-req.png  used on input line 112.
+Package pdftex.def Info: Figures/flowcharts-Device_handle-DS-req.png  used on input line 113.
 (pdftex.def)             Requested size: 441.01775pt x 601.10963pt.
-<Figures/flowcharts-Device_Main loop.png, id=811, 2946.00626pt x 3573.35pt>
+<Figures/flowcharts-Device_Main loop.png, id=886, 2946.00626pt x 3573.35pt>
 File: Figures/flowcharts-Device_Main loop.png Graphic file (type png)
 <use Figures/flowcharts-Device_Main loop.png>
-Package pdftex.def Info: Figures/flowcharts-Device_Main loop.png  used on input line 120.
+Package pdftex.def Info: Figures/flowcharts-Device_Main loop.png  used on input line 121.
 (pdftex.def)             Requested size: 441.01775pt x 534.88889pt.
 
 
-[43 <./Figures/Device_stm32-io-config.png>]
+[42 <./Figures/Device_stm32-io-config.png>]
 
-[44 <./Figures/flowcharts-Device_Receive-screen-frame.png>]
+[43 <./Figures/flowcharts-Device_Receive-screen-frame.png>]
 
-[45 <./Figures/flowcharts-Device_handle-DS-req.png>]
+[44 <./Figures/flowcharts-Device_handle-DS-req.png>]
 
-[46 <./Figures/flowcharts-Device_Main loop.png>]
-Overfull \hbox (1.57848pt too wide) in paragraph at lines 131--146
+[45 <./Figures/flowcharts-Device_Main loop.png>]
+Overfull \hbox (1.57848pt too wide) in paragraph at lines 132--147
  [][] 
  []
 
 
-Underfull \hbox (badness 5533) in paragraph at lines 163--164
+Underfull \hbox (badness 5533) in paragraph at lines 164--165
 []|\T5/ptm/m/n/13 (+20) CMD gûi frame m n h¼nh,
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 165--166
+Underfull \hbox (badness 1383) in paragraph at lines 166--167
 []|\T5/ptm/m/n/13 (+20) CMD gûi tr¤ng th¡i relay tø
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 177--178
+Underfull \hbox (badness 2057) in paragraph at lines 178--179
 \T5/ptm/m/n/13 (+20) mîi tø `Device Service` ^^_¸n
  []
 
-[47
+[46
 
 ]
-<Figures/DeviceService-create-project.png, id=840, 1139.457pt x 587.796pt>
+<Figures/DeviceService-create-project.png, id=914, 1139.457pt x 587.796pt>
 File: Figures/DeviceService-create-project.png Graphic file (type png)
 <use Figures/DeviceService-create-project.png>
-Package pdftex.def Info: Figures/DeviceService-create-project.png  used on input line 206.
+Package pdftex.def Info: Figures/DeviceService-create-project.png  used on input line 207.
 (pdftex.def)             Requested size: 441.01775pt x 227.49951pt.
 
 
-[48 <./Figures/DeviceService-create-project.png>]
-<Figures/flowcharts-Log-Process.png, id=847, 3969.83125pt x 4697.55pt>
+[47 <./Figures/DeviceService-create-project.png>]
+<Figures/flowcharts-Log-Process.png, id=921, 3969.83125pt x 4697.55pt>
 File: Figures/flowcharts-Log-Process.png Graphic file (type png)
 <use Figures/flowcharts-Log-Process.png>
-Package pdftex.def Info: Figures/flowcharts-Log-Process.png  used on input line 244.
+Package pdftex.def Info: Figures/flowcharts-Log-Process.png  used on input line 245.
 (pdftex.def)             Requested size: 441.01775pt x 521.8213pt.
 
 
-[49]
-<Figures/DeviceService_log-info-entity.png, id=852, 422.57875pt x 1181.41376pt>
+[48]
+<Figures/DeviceService_log-info-entity.png, id=926, 422.57875pt x 1181.41376pt>
 File: Figures/DeviceService_log-info-entity.png Graphic file (type png)
 <use Figures/DeviceService_log-info-entity.png>
-Package pdftex.def Info: Figures/DeviceService_log-info-entity.png  used on input line 254.
+Package pdftex.def Info: Figures/DeviceService_log-info-entity.png  used on input line 255.
 (pdftex.def)             Requested size: 176.4044pt x 493.1799pt.
 
 
-[50 <./Figures/flowcharts-Log-Process.png>]
+[49 <./Figures/flowcharts-Log-Process.png>]
 Overfull \vbox (52.82292pt too high) has occurred while \output is active []
 
 
 
-[51 <./Figures/DeviceService_log-info-entity.png>]
-<Figures/LogProcess_Detect-machine-state.png, id=868, 1283.79625pt x 610.28pt>
+[50 <./Figures/DeviceService_log-info-entity.png>]
+<Figures/LogProcess_Detect-machine-state.png, id=941, 1283.79625pt x 610.28pt>
 File: Figures/LogProcess_Detect-machine-state.png Graphic file (type png)
 <use Figures/LogProcess_Detect-machine-state.png>
-Package pdftex.def Info: Figures/LogProcess_Detect-machine-state.png  used on input line 319.
+Package pdftex.def Info: Figures/LogProcess_Detect-machine-state.png  used on input line 320.
 (pdftex.def)             Requested size: 441.01775pt x 209.64354pt.
 
-Overfull \hbox (28.30432pt too wide) in alignment at lines 327--331
+Overfull \hbox (28.30432pt too wide) in alignment at lines 328--332
  [] [] [] [] 
  []
 
 
-Overfull \hbox (28.30432pt too wide) in alignment at lines 331--336
+Overfull \hbox (28.30432pt too wide) in alignment at lines 332--337
  [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--341
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
 []|\T5/ptm/m/n/13 (+20) Generate new
  []
 
 
-Overfull \hbox (28.30432pt too wide) in alignment at lines 336--352
+Overfull \hbox (28.30432pt too wide) in alignment at lines 337--353
  [] [] [] [] 
  []
 
 
 
-[52 <./Figures/LogProcess_Detect-machine-state.png>]
-<Figures/flowcharts-DeviceService-OTA.png, id=874, 3156.79375pt x 2966.08125pt>
+[51 <./Figures/LogProcess_Detect-machine-state.png>]
+<Figures/flowcharts-DeviceService-OTA.png, id=947, 3156.79375pt x 2966.08125pt>
 File: Figures/flowcharts-DeviceService-OTA.png Graphic file (type png)
 <use Figures/flowcharts-DeviceService-OTA.png>
-Package pdftex.def Info: Figures/flowcharts-DeviceService-OTA.png  used on input line 358.
+Package pdftex.def Info: Figures/flowcharts-DeviceService-OTA.png  used on input line 359.
 (pdftex.def)             Requested size: 441.01775pt x 414.34338pt.
 
 
-[53]
+[52]
 
-[54 <./Figures/flowcharts-DeviceService-OTA.png>]
-<Figures/logs-txt-files-when-start-DeviceService.png, id=885, 1126.80975pt x 608.87476pt>
+[53 <./Figures/flowcharts-DeviceService-OTA.png>]
+<Figures/logs-txt-files-when-start-DeviceService.png, id=958, 1126.80975pt x 608.87476pt>
 File: Figures/logs-txt-files-when-start-DeviceService.png Graphic file (type png)
 <use Figures/logs-txt-files-when-start-DeviceService.png>
-Package pdftex.def Info: Figures/logs-txt-files-when-start-DeviceService.png  used on input line 453.
+Package pdftex.def Info: Figures/logs-txt-files-when-start-DeviceService.png  used on input line 454.
 (pdftex.def)             Requested size: 441.01775pt x 238.30565pt.
 
 
-[55]
-<Figures/ElectronViteReact-template.png, id=890, 1155.1155pt x 612.48825pt>
+[54]
+<Figures/ElectronViteReact-template.png, id=963, 1155.1155pt x 612.48825pt>
 File: Figures/ElectronViteReact-template.png Graphic file (type png)
 <use Figures/ElectronViteReact-template.png>
-Package pdftex.def Info: Figures/ElectronViteReact-template.png  used on input line 491.
+Package pdftex.def Info: Figures/ElectronViteReact-template.png  used on input line 492.
 (pdftex.def)             Requested size: 441.01775pt x 233.84142pt.
 
 
-[56 <./Figures/logs-txt-files-when-start-DeviceService.png>]
+[55 <./Figures/logs-txt-files-when-start-DeviceService.png>]
 File: Figures/DeviceService_log-info-entity.png Graphic file (type png)
 <use Figures/DeviceService_log-info-entity.png>
-Package pdftex.def Info: Figures/DeviceService_log-info-entity.png  used on input line 513.
+Package pdftex.def Info: Figures/DeviceService_log-info-entity.png  used on input line 514.
 (pdftex.def)             Requested size: 176.4044pt x 493.1799pt.
 
 
-[57 <./Figures/ElectronViteReact-template.png>]
-<Figures/DeviceServiceClient-init-ui.png, id=902, 1053.9375pt x 479.99326pt>
+[56 <./Figures/ElectronViteReact-template.png>]
+<Figures/DeviceServiceClient-init-ui.png, id=975, 1053.9375pt x 479.99326pt>
 File: Figures/DeviceServiceClient-init-ui.png Graphic file (type png)
 <use Figures/DeviceServiceClient-init-ui.png>
-Package pdftex.def Info: Figures/DeviceServiceClient-init-ui.png  used on input line 537.
+Package pdftex.def Info: Figures/DeviceServiceClient-init-ui.png  used on input line 538.
 (pdftex.def)             Requested size: 441.01775pt x 200.85605pt.
 
 
-[58]
-<Figures/Device-installation-field.jpg, id=908, 1130.2225pt x 2569.6pt>
+[57]
+<Figures/Device-installation-field.jpg, id=981, 1130.2225pt x 2569.6pt>
 File: Figures/Device-installation-field.jpg Graphic file (type jpg)
 <use Figures/Device-installation-field.jpg>
-Package pdftex.def Info: Figures/Device-installation-field.jpg  used on input line 549.
+Package pdftex.def Info: Figures/Device-installation-field.jpg  used on input line 550.
 (pdftex.def)             Requested size: 264.61333pt x 601.58199pt.
 
 
-[59 <./Figures/DeviceServiceClient-init-ui.png>]
-<Figures/DeviceService_setup-last-step.png, id=915, 532.99126pt x 440.39531pt>
+[58 <./Figures/DeviceServiceClient-init-ui.png>]
+<Figures/DeviceService_setup-last-step.png, id=988, 532.99126pt x 440.39531pt>
 File: Figures/DeviceService_setup-last-step.png Graphic file (type png)
 <use Figures/DeviceService_setup-last-step.png>
-Package pdftex.def Info: Figures/DeviceService_setup-last-step.png  used on input line 558.
+Package pdftex.def Info: Figures/DeviceService_setup-last-step.png  used on input line 559.
 (pdftex.def)             Requested size: 198.45663pt x 163.97856pt.
-<Figures/DeviceService_configfile.png, id=916, 1193.96063pt x 386.19281pt>
+<Figures/DeviceService_configfile.png, id=989, 1193.96063pt x 386.19281pt>
 File: Figures/DeviceService_configfile.png Graphic file (type png)
 <use Figures/DeviceService_configfile.png>
-Package pdftex.def Info: Figures/DeviceService_configfile.png  used on input line 560.
+Package pdftex.def Info: Figures/DeviceService_configfile.png  used on input line 561.
 (pdftex.def)             Requested size: 198.45663pt x 64.19048pt.
 
 
-[60 <./Figures/Device-installation-field.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+[59 <./Figures/Device-installation-field.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
 []|\T5/ptm/m/n/13 (+20) Kiºm tra File log
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 578--578
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
 \T5/cmtt/m/n/13 deviceInterface.txt \T5/ptm/m/n/13 (+20) li»t
  []
 
 
 
-[61 <./Figures/DeviceService_setup-last-step.png> <./Figures/DeviceService_configfile.png>])
+[60 <./Figures/DeviceService_setup-last-step.png> <./Figures/DeviceService_configfile.png>])
 
-[62] (./Contents/Conclusion.tex)
+[61] (./Contents/Conclusion.tex)
 
-[63
+[62
 
 
-] (./main.bbl)
+] (./main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+[]\T5/ptm/m/n/13 (+20) STMicroelectronics, \T5/ptm/m/it/13 (+20) RM0090: STM32F405/415, STM32F407/417,
+ []
 
-[64] (./Contents/Appendix.tex)
 
-[65] (./main.aux (./Contents/4_Simulation_results.aux))
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+[]\T5/ptm/m/n/13 (+20) Microchip, \T5/ptm/m/it/13 (+20) LAN8720A/LAN8720AI\T5/ptm/m/n/13 (+20) , 2024. [Online].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+\T5/ptm/m/n/13 (+20) Available: [][]$https : / / ww1 . microchip . com / downloads /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+\T5/ptm/m/n/13 (+20) aemDocuments / documents / UNG / ProductDocuments / DataSheets /
+ []
+
+)
+
+[63] (./Contents/Appendix.tex
+<Figures/Logic-analyzer-download-page.png, id=1032, 1073.81175pt x 534.19576pt>
+File: Figures/Logic-analyzer-download-page.png Graphic file (type png)
+<use Figures/Logic-analyzer-download-page.png>
+Package pdftex.def Info: Figures/Logic-analyzer-download-page.png  used on input line 27.
+(pdftex.def)             Requested size: 352.81554pt x 175.51894pt.
+
+
+[64 <./Figures/Logic-analyzer-download-page.png>]
+
+[65]
+
+[66]
+
+[67])
+
+[68] (./main.aux (./Contents/4_Simulation_results.aux))
  ***********
 LaTeX2e <2025-06-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 24A6308277218F6153132E88BE9990F8;14763.
+(rerunfilecheck)             Checksum: C11547E65EA17B201D8CFCF1ADD351A8;17256.
  ) 
 Here is how much of TeX's memory you used:
- 24267 strings out of 467892
- 475136 string characters out of 5430995
- 960886 words of memory out of 5000000
- 52026 multiletter control sequences out of 15000+600000
- 679669 words of font info for 173 fonts, out of 8000000 for 9000
+ 24348 strings out of 467892
+ 477157 string characters out of 5430995
+ 959956 words of memory out of 5000000
+ 52074 multiletter control sequences out of 15000+600000
+ 680973 words of font info for 178 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 96i,10n,94p,1142b,1307s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<d:/Program Files/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagb.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on main.pdf (76 pages, 9690855 bytes).
+ 96i,10n,94p,1142b,1309s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/Program Files/texlive/2025/texmf-dist/fonts/type1/public/tex-gyre/qagb.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb><d:/Program Files/texlive/2025/texmf-dist/fonts/type1/vntex/vnr/vntt12.pfb>
+Output written on main.pdf (79 pages, 9834648 bytes).
 PDF statistics:
- 1031 PDF objects out of 1200 (max. 8388607)
- 828 compressed objects within 9 object streams
- 203 named destinations out of 1000 (max. 500000)
- 35575 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1148 PDF objects out of 1200 (max. 8388607)
+ 935 compressed objects within 10 object streams
+ 227 named destinations out of 1000 (max. 500000)
+ 39758 words of extra memory for PDF output out of 42996 (max. 10000000)
 

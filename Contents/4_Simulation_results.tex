@@ -93,10 +93,11 @@ Các ngoại vi được sử dụng bao gồm:
 
  \begin{itemize}
     \item Khởi tạo và kết nối với phần mềm Device Service
-    \item Xử lý ngắt SPI1: Nhận yêu cầu từ Device Service
-    \item Xử lý ngắt SPI2: Nhận SPI byte từ CPLD
-    \item Xử lý ngắt báo Frame Stop: Báo kết thúc 1 screen frame và tiến hành lưu frame
- \end{itemize}
+    \item Xử lý ngắt SPI1: Nhận yêu cầu từ Device Service. Khối thực hiện: Capture Driver (hình \ref{fig:flowcharts-Device_Receive-screen-frame})
+     \item Xử lý ngắt báo Frame Stop: Báo kết thúc 1 screen frame và tiến hành lưu frame. Khối thực hiện: Capture Driver
+    \item Xử lý ngắt SPI2: Nhận SPI byte từ chip Ethernet. Khối tham gia thực hiện: Internet, OTA, Device Driver. (hình \ref{fig:flowcharts-Device_handle-DS-req})
+    \item Lấy frame màn hình và gửi lên phần mềm Device Service (hàm main - super loop, hình \ref{fig:flowcharts-Device_Main loop})
+   \end{itemize}
 
 
 \begin{figure}[!ht]

@@ -11,4 +11,174 @@
 \counterwithin{figure}{section}
 
 % \section{Công trình công bố liên quan}\label{sec:cong_bo}
+\section{Các bước khảo sát tín hiệu và thu thập dữ liệu màn hình}
 
+Phần này trình bày chi tiết quá trình khảo sát các chân tín hiệu và thu dữ liệu màn hình theo thời gian thực, phục vụ cho việc khảo sát dữ liệu màn hình và thiết kế bộ giải mã về sau.
+\subsection{Các công cụ sử dụng}
+
+\begin{itemize}
+    \item Đồng hồ đo áp: Xác định các chân nguồn, đất, xung, dữ liệu và các chân điện áp cao.
+    \item Mạch phần cứng và phần mềm Logic Analyzer: Khảo sát các chân đồng bộ xung (nếu có) và các chân dữ liệu.
+    \item Thiết bị ghi hình: có thể sử dụng điện thoại thông minh, để quay màn hình cột bơm và ghi lại thời điểm quay.
+\end{itemize}
+
+\begin{figure}[!ht]
+     \centering
+    \includegraphics[width=0.8\linewidth]{Figures/Logic-analyzer-download-page.png}
+    \caption{Trang cài đặt ứng dụng Logic 2}
+    \label{fig:Logic-analyzer-download-page}
+\end{figure}
+
+\subsection{Các bước khảo sát tín hiệu}
+
+Phần này chỉ ra các bước để tìm chân nguồn, đất, tín hiệu và các chân điện áp cao (để tránh cắm dây Logic Analyzer vào), từ đó kết nối Logic Analyzer để khảo sát các chân tín hiệu.
+
+\begin{itemize}
+    \item Công cụ sử dụng: Đồng hồ đo điện áp. 
+    \item Chế độ: thang đo điện áp 1 chiều.
+\end{itemize}
+
+
+
+\textbf{Bước 1:} Khảo sát và xác định chân đất, chân tín hiệu và điện áp tối đa của tín hiệu:
+
+Lần lượt thử với tất cả các chân kết nối màn hình những thao tác sau: 
+
+\begin{itemize}
+    \item Thao tác với đồng hồ đo (thang đo điện áp 1 chiều):
+    \begin{itemize}
+        \item Que đo Đen: Cắm vào chân cần khảo sát.
+        \item  Que đo Đỏ: Cắm lần lượt vào các chân còn lại.
+    \end{itemize} 
+
+    \item Đối với mỗi chân được khảo sát: Nhìn điện áp đo được mỗi khi đổi vị trí que đo Đỏ và phân tích:
+    \begin{itemize}
+        \item Nếu điện áp luôn dương: Chân khảo sát là chân đất
+        \item Nếu không luôn dương (có thể có âm): Đây là chân tín hiệu
+        \item Nếu có chân tín hiệu mà mà điện áp >5V hoặc <-5V: Một trong 2 chân là chân điện áp cao.
+        
+
+
+
+    \end{itemize}
+    
+
+
+\end{itemize}
+
+\textbf{Bước 3:} Thu tín hiệu theo thời gian thực 
+
+Sau khi xác định được chân đất và các chân tín hiệu, tiến hành cắm thiết bị đo (mạch Logic Analyzer) và đặt máy quay để thu:
+\begin{itemize}
+    \item Nối 1 chân đất (khảo sát ở Bước 2) vào chân GND của Logic Analyzer		
+    \item Nối các chân tín hiệu (khảo sát ở Bước 2) theo thứ tự chân từ nhỏ tới lớn vào các chân CH1, CH2…CH8 của thiết bị đo
+    \item Chụp ảnh khu vực 4 khu vực và lưu vào thư mục bên dưới: đầu cắm màn hình, đầu cắm vào Header In, Header Out, phần nối Mạch với thiết bị đo	
+    \item Cắm dây USB nối Logic Analyzer vào cổng USB trên máy tính		
+    \item Tạo 1 thư mục đặt tên chứa thông tin, bao gồm:
+    \begin{itemize}
+        \item Vị trí cột bơm, ngày giờ khảo sát.
+        \item File record, hình ảnh và video.
+    \end{itemize}	
+
+\end{itemize}
+
+\subsection{Kịch bản thao tác với cột bơm để thu thập dữ liệu}
+
+
+     Pha này thu thập dữ liệu Tổng tiền, Số Lit, Đơn giá thông qua các phiên bơm, cài đặt đơn giá. Để thu được hết các chữ số trên màn hình, cần thu các phiên bơm có giá trị cao
+  
+     Khi quay video, đầu tiên cần quay lại hành động nhấn nút bắt đầu Record trên phần mềm
+ 
+     Quy trình quay và record dữ liệu:
+Sử dụng điện thoại quay lại cả quá trình:
+
+\begin{itemize}
+    \item Bắt đầu bằng việc quay lại hành động nhấn nút Start Record trên phần mềm
+    \item Sau đó, chỉ quay màn hình cột bơm
+    \item Khi kết thúc quá trình, đưa điện thoại về máy tính, quay hành động dừng Record, lưu file Record. Sau đó mới dừng kết thúc quay video và lưu video lại.
+    \item Đặt tên file record và video theo hướng dẫn ở các bước dưới
+\end{itemize}
+
+\subsubsection{Thu thập các phiên bơm}
+
+Thu thập ít nhất 2 phiên bơm liên tiếp nhau (có thể hiểu là quá trình bán cho 2 khách hàng liên tiếp nhau). Phiên bơm được tính từ thời điểm cò đang được gác trên cột, đến khi kết thúc 1 phiên bơm là nhân vân gác cò lại cột
+
+Sau khi thu các phiên, quay và record lại dữ liệu, lưu với tên "Phien lan 1", "Phien lan 2", v.v..
+
+\textbf{Lưu ý:
+}Để thu được hết các chữ số trên màn hình, cần thu các phiên bơm có giá trị cao
+
+\subsubsection{Thu thập thông tin đơn giá}
+
+\hspace{0.8cm}Bước 1. Nhấn để hiển thị kín hết dòng Đơn giá  chuỗi ký tự tăng dần "1234…9" (chấp nhận ký tự có dấu chấm trong chuỗi miễn sao kín dòng là được).
+
+Bước 2. Xóa màn hình
+
+Bước 3. Nhấn để hiển thị kín hết dòng Đơn giá chuỗi ký tự giảm dần "987...10".
+
+Phải đảm bảo ở bước 1 và 3 hiển thị đủ các ký tự từ 0 đến 9. Ví dụ bước 1 nhập 123456, thì bước 2 nhập 9870"
+
+Quay và record lại dữ liệu, lưu với tên "Don gia"
+
+\textbf{Lưu ý:} Mỗi thao tác nhấn nút cần cách nhau khoảng 1 giây, tránh bấm quá nhanh.
+
+\subsubsection{Thu thập tín hiệu cho hiển thị tiền và preset tiền}
+
+\hspace{0.8cm}\textbf{Thu thập dòng hiển thị tiền:}
+
+Bước 1. Nhấn để hiển thị kín hết dòng Tiền chuỗi ký tự tăng dần "1234…9" (chấp nhận ký tự có dấu chấm trong chuỗi miễn sao kín dòng là được).
+Bước 2. Xóa màn hình
+Bước 3. Nhấn để hiển thị kín hết dòng Tiền chuỗi ký tự giảm dần "987...10".
+Phải đảm bảo ở bước 1 và 3 hiển thị đủ các ký tự từ 0 đến 9. Ví dụ bước 1 nhập 123456, thì bước 2 nhập 9870"
+
+\textbf{Thu thập tín hiệu thời điểm preset tiền:}
+\begin{itemize}
+    \item Xóa màn hình về 0
+    \item Bấm Preset: "0.1"
+    \item Nghỉ 3s
+    \item Xóa màn hình về 0
+    \item Bấm Preset: "1.0"
+    \item Nghỉ 3s
+    \item Xóa màn hình về 0
+    \item Bấm Preset: "1.1"
+    \item Nhấn OK nếu có
+    \item Nghỉ 3s
+    \item Xóa màn hình về 0
+    \item Bấm Preset: "2.2"
+    \item Nhấn OK nếu có
+    \item Nghỉ 3s
+    \item Xóa màn hình về 0
+    \item Bấm Preset: "3.3"
+    \item Nhấn OK nếu có
+    \item Nghỉ 3s
+    \item Xóa màn hình về 0
+    \item Bấm Preset: "4.4"
+    \item Nhấn OK nếu có
+    \item Nghỉ 3s
+    \item Xóa màn hình về 0
+    \item Bấm Preset: "5.5"
+    \item Nhấn OK nếu có
+    \item Nghỉ 3s
+    \item Xóa màn hình về 0
+    \item Bấm Preset: "6.6"
+    \item Nhấn OK nếu có
+    \item Nghỉ 3s
+    \item Xóa màn hình về 0
+    \item Bấm Preset: "7.7"
+    \item Nhấn OK nếu có
+    \item Nghỉ 3s
+    \item Xóa màn hình về 0
+    \item Bấm Preset: "8.8"
+    \item Nhấn OK nếu có
+    \item Nghỉ 3s
+    \item Xóa màn hình về 0
+    \item Bấm Preset: "9.9"
+    \item Nhấn OK nếu có
+    \item Nghỉ 3s
+\end{itemize}
+
+\textbf{Lưu ý:} Mỗi thao tác nhấn nút cần cách nhau khoảng 1 giây, tránh bấm quá nhanh
+
+\subsubsection{Thu thập tín hiệu cho hiển thị lit và preset lit}
+
+Thao tác thu thập tín hiệu cho hiển thị lit và preset lit hoàn toàn tương tự với \textbf{Thu thập tín hiệu cho hiển thị tiền và preset tiền} đã nêu ở trên.

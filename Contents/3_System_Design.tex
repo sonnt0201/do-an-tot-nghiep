@@ -135,7 +135,7 @@ Thiết bị giao tiếp với phần mềm giải mã thông qua mạng LAN, s�
 \textbf{a.  Khối xử lý trung tâm}
 
 
-Từ những yêu cầu đã nêu ở Chương 2, lựa chọn STM32F407VET6 là vi điều khiển xử lý trung tâmSTM32F407VET6:
+Từ những yêu cầu đã nêu ở Chương 2, lựa chọn STM32F407VET6 là vi điều khiển xử lý trung tâm:
 
 
 \begin{figure}[!ht]
@@ -152,11 +152,7 @@ Sơ đồ nguyên lý mạch:
     \item Nguồn cấp 3.3V được đưa vào các chân VDD và Vref của module, các chân VSS được nối đất. Thiết kế nguồn nối với đất qua các tụ Bypass có nhiệm vụ lọc nhiễu cao tần cho nguồn nuôi vi điều khiển.
     \item Sử dụng SPI1 để giao tiếp với chip Ethernet. SPI2 để giao tiếp với khối chuyển đổi dữ liệu
     \item Các chân PA1, PA2, PA3 điều khiển đèn báo led 
-    \item Reset STM32 được thực hiện khi chân NRST hạ xuống mức 0:
-    \begin{itemize}
-        \item Điện trở kéo lên 10K$\Omega$
-        \item Tụ điện: C = 100nF, giúp tạo xung reset ngắn nhưng đủ để tái khởi STM32
-    \end{itemize}
+    \item Reset STM32 được thực hiện khi chân NRST hạ xuống mức 0.
     \item Mạch nạp cho STM32:
     \begin{itemize}
         \item Thiết kế mạch nạp theo chuẩn SWD
@@ -208,9 +204,10 @@ Yêu cầu thiết kế:
         \item Cách ly và chống nhiễu.
     \end{itemize}
 
-    \item Khối Ethernet:
+    \item Khối Ethernet: 
     \begin{itemize}
         \item Chống nhiễu.
+        \item Tốc độ cao, hỗ trợ TCP, UDP.
         \item Giao tiếp với MCU (STM32) theo chuẩn SPI.
     \end{itemize}
 \end{itemize}
@@ -357,9 +354,9 @@ Các luồng giao tiếp với nhau thông qua các hàng đợi (Queue). Các h
     \item Cập nhật firmware cho thiết bị
     \item Gửi yêu cầu đóng ngắt relay 
 \end{itemize}
-\textbf{
-    a. Giải mã, gửi giá trị màn hình và phát hiện phiên bơm
-}
+
+\FloatBarrier
+\textbf{a. Giải mã, gửi giá trị màn hình và phát hiện phiên bơm}
 
 \begin{figure}[!ht]
      \centering
@@ -384,7 +381,7 @@ Dữ liệu thô từ màn hình cây xăng được đọc liên tục, decode 
 
 
 
-
+\FloatBarrier
 \textbf{
 b. Điều khiển relay cho thiết bị 
 }
@@ -414,7 +411,7 @@ File firmware mới được gửi từ Client UI, được mã hóa dưới d�
 
 \begin{figure}[!ht]
      \centering
-    \includegraphics[width=0.8\linewidth]{Figures/Chap3_Device-firm-implementation-ota.png}
+    \includegraphics[width=0.8\linewidth]{Figures/DeviceService_implementation-sequence-ota.png}
     \caption{Trình tự giao tiếp phần mềm trong trường hợp thực hiện OTA}
     \label{fig:Chap3_Device-firm-implementation-ota}
 \end{figure}
